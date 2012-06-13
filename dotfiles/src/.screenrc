@@ -1,0 +1,13 @@
+escape ^]]
+
+#unsetenv SSH_AUTH_SOCK
+#setenv SSH_AUTH_SOCK "/tmp/ssh-agent-$USER-screen"
+shell bash
+shelltitle ''
+vbell off
+defutf8 on
+startup_message off
+defscrollback 10000
+termcapinfo xterm* ti@:te@
+hardstatus alwayslastline
+hardstatus string  '%{= Kw}%-Lw%{=b bW}%50>%n: %t%{= Kw}%+Lw%< %{= kG}%-=%D %d %M %Y %c:%s%{-}'
