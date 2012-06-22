@@ -84,23 +84,41 @@ alias g='git'
 alias tat='tmux attach'
 
 google() { links http://google.com/search?q=$(echo "$@" | sed s/\ /+/g); }
-racki() { racket -ie '(enter! "'$1'")'; }
-bz2() { tar cvpjf $1.tar.bz2 $1; }
+bz2() { tar cvpjf "$1".tar.bz2 "$1"; }
+gz() { tar cvpzf "$1".tar.gz "$1"; }
+exto() {
+  if [ -f "$2" ]; then
+    if [ -f "$1" ]; then
+      echo "'$1' destination path should be a directory or not yet exist"
+    else
+      mkdir -vp "$1"
+      case "$2" in
+        *.tar.bz2) tar xvjf "$2" -C "$1";;
+        *.tar.gz)  tar xvzf "$2" -C "$1";;
+        *.tar)     tar xvf  "$2" -C "$1";;
+        *.tbz2)    tar xvjf "$2" -C "$1";;
+        *.tgz)     tar xvzf "$2" -C "$1";;
+        *)         echo "exto does not support '$2'";;
+      esac
+    fi
+  else echo "second arg '$2' is not a valid file"
+  fi
+}
 extract() {
-  if [ -f $1 ] ; then
-    case $1 in
-      *.tar.bz2) tar xvjf $1;;
-      *.tar.gz)  tar xvzf $1;;
-      *.bz2)     bunzip2 $1;;
-      *.rar)     unrar x $1;;
-      *.gz)      gunzip $1;;
-      *.tar)     tar xvf $1;;
-      *.tbz2)    tar xvjf $1;;
-      *.tgz)     tar xvzf $1;;
-      *.zip)     unzip $1;;
-      *.Z)       uncompress $1;;
-      *.7z)      7z x $1;;
-      *)         echo "extract does not support '$1'" ;;
+  if [ -f "$1" ]; then
+    case "$1" in
+      *.tar.bz2) tar xvjf "$1";;
+      *.tar.gz)  tar xvzf "$1";;
+      *.bz2)     bunzip2 "$1";;
+      *.rar)     unrar x "$1";;
+      *.gz)      gunzip "$1";;
+      *.tar)     tar xvf "$1";;
+      *.tbz2)    tar xvjf "$1";;
+      *.tgz)     tar xvzf "$1";;
+      *.zip)     unzip "$1";;
+      *.Z)       uncompress "$1";;
+      *.7z)      7z x "$1";;
+      *)         echo "extract does not support '$1'";;
     esac
   else echo "'$1' is not a valid file"
   fi
@@ -122,6 +140,8 @@ vgrep() { vimo `grep_files "$@"`; }
 
 summ() { awk '{for (i = 1; i <= NF; ++i) total+=$i;} END{print total}'; }
 alias lcr="find . -type f -exec wc -l {} \; | summ"
+
+racki() { racket -ie '(enter! "'$1'")'; }
 
 PACKDIR='~/config/pack'
 PACKMANAGE="$PACKDIR/manage.py"
