@@ -19,3 +19,5 @@
 	rbi = rebase -i
 	sh = show
 	st = status
+[core]
+	excludesfile = ~/.gitignore
