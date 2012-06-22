@@ -130,3 +130,4 @@ alias pinstall="sudo $PACKMANAGE -i"
 alias premove="sudo $PACKMANAGE -r"
 alias pfind='apt-cache search'
 alias pshow='apt-cache show'
+alias pupdate='sudo apt-get update'
