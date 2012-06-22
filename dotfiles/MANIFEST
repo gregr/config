@@ -1,0 +1,12 @@
+.bashrc
+.emacs
+.ghci
+.gitconfig
+.inputrc
+.racketrc
+.screenrc
+.tmux.conf
+.vim/doc
+.vim/plugin
+.vimrc
+git-completion.bash
