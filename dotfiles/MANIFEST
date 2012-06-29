@@ -4,6 +4,7 @@
 .gitconfig
 .gitignore
 .inputrc
+.irssi
 .racketrc
 .screenrc
 .tmux.conf
