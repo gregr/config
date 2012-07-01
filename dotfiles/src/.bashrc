@@ -125,18 +125,19 @@ extract() {
 }
 
 field() { prog='{ print $'"$1"' }'; awk "$prog"; }
-git_files() {
+git-files() {
   git $2 $3 --name-status --pretty=oneline |
   if [ "$1" -eq 0 ]; then cat; else sed 1d; fi | grep -E -v '^D' | field 2
 }
-grep_files() { grep "$@" | awk -F':' '{print $1}' | uniq; }
-gdf() { git_files 0 diff $1; }
-gsh() { git_files 1 show $1; }
+gdf() { git-files 0 diff $1; }
+gsh() { git-files 1 show $1; }
 alias vimo='vim -O'
 vsh() { vimo `gsh $1`; }
 vdf() { vimo `gdf $1`; }
-# TODO: ignore .git files
-vgrep() { vimo `grep_files "$@"`; }
+
+alias grep-vcs='grep --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn --exclude=*.swp --exclude=*~'
+alias grep-files='grep-vcs --color=none -l'
+vgrep() { vimo `grep-files "$@"`; }
 
 summ() { awk '{for (i = 1; i <= NF; ++i) total+=$i;} END{print total}'; }
 alias lcr="find . -type f -exec wc -l {} \; | summ"
@@ -149,5 +150,5 @@ alias plist="cat $PACKDIR/PACKAGES"
 alias pinstall="sudo $PACKMANAGE -i"
 alias premove="sudo $PACKMANAGE -r"
 alias pfind='apt-cache search'
-alias pshow='apt-cache show'
 alias pupdate='sudo apt-get update'
+pshow() { apt-cache show "$@"; apt-cache policy "$@"; }
