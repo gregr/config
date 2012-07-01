@@ -53,6 +53,7 @@ nnoremap + <C-w>+
 nnoremap - <C-w><
 nnoremap = <C-w>>
 
+nnoremap gF :vertical wincmd f<CR>
 nnoremap gV `[V`]
 vmap <C-k> xkPgV
 vmap <C-j> xpgV
