@@ -1,0 +1,3 @@
+#!/bin/bash
+
+grep-vcs --color=none -l "$@"

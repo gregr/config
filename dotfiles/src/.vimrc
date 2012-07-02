@@ -47,7 +47,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-nnoremap <C-m> <C-w>_
+nnoremap <C-m> <C-w>=
 nnoremap _ <C-w>-
 nnoremap + <C-w>+
 nnoremap - <C-w><
@@ -62,8 +62,8 @@ cnoremap %% <C-R>=expand("%:p:h")."/"<CR>
 
 nnoremap <leader>d :bp<bar>sp<bar>bn<bar>bd<CR>
 nnoremap <leader>D :bp<bar>sp<bar>bn<bar>bd!<CR>
-nnoremap <leader>G :vnew<bar>r!grep<space>-e<space>
-nnoremap <leader>g :vnew<bar>r!grep<space>-r<space>.<space>-e<space>
+nnoremap <leader>g :vnew<bar>r!grep-vcs<space>-r<space>.<space>-e<space>
+nnoremap <leader>G :vnew<bar>r!grep-files<space>-r<space>.<space>-e<space>
 nnoremap <leader>f :vnew<bar>r!find<space>.<space>-name<space>
 nnoremap <leader>F :vnew<bar>r!find<space>.<space>-regextype<space>posix-extended<space>-regex<space>
 map <leader>e :vs<space>%%<CR>

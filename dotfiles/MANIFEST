@@ -11,4 +11,6 @@
 .vim/doc
 .vim/plugin
 .vimrc
+bin/grep-files
+bin/grep-vcs
 git-completion.bash

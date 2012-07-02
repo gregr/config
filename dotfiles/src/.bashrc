@@ -134,9 +134,6 @@ gsh() { git-files 1 show $1; }
 alias vimo='vim -O'
 vsh() { vimo `gsh $1`; }
 vdf() { vimo `gdf $1`; }
-
-alias grep-vcs='grep --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn --exclude=*.swp --exclude=*~'
-alias grep-files='grep-vcs --color=none -l'
 vgrep() { vimo `grep-files "$@"`; }
 
 summ() { awk '{for (i = 1; i <= NF; ++i) total+=$i;} END{print total}'; }

@@ -59,6 +59,8 @@ class Mutator(object):
   def move(self, src, tgt):
     print 'moving:', src, '->', tgt
     if self.dryrun: return
+    tgt_path = os.path.dirname(tgt)
+    if not os.path.exists(tgt_path): self.mkdirp(tgt_path)
     shutil.move(src, tgt)
   def symlink(self, src, tgt):
     print 'linking:', src, '->', tgt
