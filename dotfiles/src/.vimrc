@@ -2,6 +2,7 @@ set nocompatible
 set fileformats=unix,dos,mac
 set backspace=indent,eol,start
 set scrolloff=10
+set relativenumber
 set autoread nobackup nowb hidden lazyredraw
 set autoindent smartindent shiftround
 set incsearch ignorecase smartcase hlsearch
