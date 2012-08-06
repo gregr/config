@@ -6,6 +6,7 @@ chromium-browser
 chromium-codecs-ffmpeg-extra
 coq
 default-jdk
+elinks
 emacs
 erlang
 feh
@@ -28,8 +29,11 @@ libsdl-ttf2.0-dev
 libsdl1.2-dev
 libvirt-bin
 links
+links2
+lynx
 markdown
 mercurial
+netrik
 octave3.2
 p7zip-full
 python-dev
@@ -49,9 +53,11 @@ swig
 tmux
 vde2
 vim
+vim-gnome
 virt-manager
 virt-viewer
 virtinst
+w3m
 xmonad
 xubuntu-desktop
 yesod
