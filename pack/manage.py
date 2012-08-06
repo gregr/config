@@ -52,6 +52,7 @@ def run(file_name, install, remove):
     if items: logging.warn('%s: %s', desc, items)
 
 def reinstall(file_name):
+  call(['apt-get', 'update'])
   for name in cur_packages(file_name):
     call(['apt-get', 'install', '-y', name])
 

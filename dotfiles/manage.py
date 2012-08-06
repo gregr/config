@@ -65,6 +65,8 @@ class Mutator(object):
   def symlink(self, src, tgt):
     print 'linking:', src, '->', tgt
     if self.dryrun: return
+    src_dir = os.path.dirname(src)
+    if not os.path.exists(src_dir): self.mkdirp(src_dir)
     os.symlink(tgt, src)
   def unlink(self, path):
     print 'removing:', path
