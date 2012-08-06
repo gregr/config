@@ -14,3 +14,5 @@ call([dotfile_manage, '--install'])
 for line in open(cabal_packages):
   package = line.strip()
   if package: call(['cabal', 'install', package])
+
+#call(['gsettings', 'set', 'org.gnome.desktop.interface', 'gtk-key-theme', 'Emacs'])
