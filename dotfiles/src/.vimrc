@@ -34,6 +34,7 @@ if has("autocmd")
   autocmd BufWritePre * :call <SID>RStripAll()
   autocmd BufRead,BufNewFile *.rkt set filetype=scheme
   autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
+  autocmd BufRead,BufNewFile SConstruct set filetype=python
 endif
 
 let g:netrw_liststyle = 0
@@ -42,6 +43,9 @@ let g:netrw_altv = 1
 
 let mapleader = ","
 noremap ; :
+
+nnoremap <C-p> :bprev<CR>
+nnoremap <C-n> :bnext<CR>
 
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
