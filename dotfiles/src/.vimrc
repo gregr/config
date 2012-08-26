@@ -1,4 +1,8 @@
 set nocompatible
+runtime bundle/pathogen/autoload/pathogen.vim
+call pathogen#infect()
+call pathogen#helptags()
+
 set fileformats=unix,dos,mac
 set backspace=indent,eol,start
 set scrolloff=10

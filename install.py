@@ -15,4 +15,7 @@ for line in open(cabal_packages):
   package = line.strip()
   if package: call(['cabal', 'install', package])
 
-#call(['gsettings', 'set', 'org.gnome.desktop.interface', 'gtk-key-theme', 'Emacs'])
+cur_path = os.getcwd()
+os.chdir(config_path)
+call(['git', 'submodule', 'update', '--init'])
+os.chdir(cur_path)

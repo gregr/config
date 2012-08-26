@@ -9,8 +9,7 @@
 .racketrc
 .screenrc
 .tmux.conf
-.vim/doc
-.vim/plugin
+.vim/bundle
 .vimrc
 bin/grep-files
 bin/grep-vcs
