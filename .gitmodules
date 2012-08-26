@@ -10,3 +10,6 @@
 [submodule "dotfiles/src/.vim/bundle/unimpaired"]
 	path = dotfiles/src/.vim/bundle/unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
+[submodule "dotfiles/src/.vim/bundle/tabular"]
+	path = dotfiles/src/.vim/bundle/tabular
+	url = git://github.com/godlygeek/tabular.git
