@@ -7,3 +7,6 @@
 [submodule "dotfiles/src/.vim/bundle/nerdcommenter"]
 	path = dotfiles/src/.vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "dotfiles/src/.vim/bundle/unimpaired"]
+	path = dotfiles/src/.vim/bundle/unimpaired
+	url = git://github.com/tpope/vim-unimpaired.git

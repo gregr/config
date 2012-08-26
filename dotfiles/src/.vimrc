@@ -64,9 +64,10 @@ nnoremap - <C-w><
 nnoremap = <C-w>>
 
 nnoremap gF :vertical wincmd f<CR>
+"select most recently modified text
 nnoremap gV `[V`]
-vmap <C-k> xkPgV
-vmap <C-j> xpgV
+vmap <C-k> [egv
+vmap <C-j> ]egv
 
 cnoremap %% <C-R>=expand("%:p:h")."/"<CR>
 
