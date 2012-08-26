@@ -8,7 +8,7 @@ set autoindent smartindent shiftround
 set incsearch ignorecase smartcase hlsearch
 set showmatch showcmd
 set laststatus=2
-set statusline=\ %F%m%r%h%y\ %n\ %w%=[\ %l/%L:%c\ ]
+set statusline=\ %n\ %F%m%r%y%{fugitive#statusline()}\ %w%=[\ %l/%L:%c\ ]
 set wildmenu wildmode=list:longest,full
 set list listchars=tab:>-,trail:-
 
@@ -35,6 +35,7 @@ if has("autocmd")
   autocmd BufRead,BufNewFile *.rkt set filetype=scheme
   autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
   autocmd BufRead,BufNewFile SConstruct set filetype=python
+  autocmd BufReadPost fugitive://* set bufhidden=delete
 endif
 
 let g:netrw_liststyle = 0
