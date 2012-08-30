@@ -127,7 +127,8 @@ extract() {
 field() { prog='{ print $'"$1"' }'; awk "$prog"; }
 git-files() {
   git $2 $3 --name-status --pretty=oneline |
-  if [ "$1" -eq 0 ]; then cat; else sed 1d; fi | grep -E -v '^D' | field 2
+  if [ "$1" -eq 0 ]; then cat; else sed 1d; fi | grep -E -v '^D' | field 2 |
+    uniq
 }
 gdf() { git-files 0 diff $1; }
 gsh() { git-files 1 show $1; }
