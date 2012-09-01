@@ -75,7 +75,7 @@ nnoremap <leader>d :bp<bar>sp<bar>bn<bar>bd<CR>
 nnoremap <leader>D :bp<bar>sp<bar>bn<bar>bd!<CR>
 nnoremap <leader>g :vnew<bar>r!grep-vcs<space>-r<space>.<space>-e<space>
 nnoremap <leader>G :vnew<bar>r!grep-files<space>-r<space>.<space>-e<space>
-nnoremap <leader>f :vnew<bar>r!find<space>.<space>-name<space>
+nnoremap <leader>f :vnew<bar>r!find-vcs<space>.<space>-name<space>
 nnoremap <leader>F :vnew<bar>r!find<space>.<space>-regextype<space>posix-extended<space>-regex<space>
 map <leader>e :vs<space>%%<CR>
 
