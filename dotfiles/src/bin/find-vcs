@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ROOT_PATH="$1"
+shift
+find "$ROOT_PATH" -type d \( -name .git -o -name .hg -o -name .svn \) -prune -o "$@"

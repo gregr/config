@@ -11,6 +11,7 @@
 .tmux.conf
 .vim/bundle
 .vimrc
+bin/find-vcs
 bin/grep-files
 bin/grep-vcs
 git-completion.bash
