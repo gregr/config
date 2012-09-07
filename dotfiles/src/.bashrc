@@ -148,5 +148,6 @@ alias plist="cat $PACKDIR/PACKAGES"
 alias pinstall="sudo $PACKMANAGE -i"
 alias premove="sudo $PACKMANAGE -r"
 alias pfind='apt-cache search'
-alias pupdate='sudo apt-get update'
+alias pupdate='sudo apt-get update && sudo apt-file update -N'
+alias pfile='apt-file find'
 pshow() { apt-cache show "$@"; apt-cache policy "$@"; }
