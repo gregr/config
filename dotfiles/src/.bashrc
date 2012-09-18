@@ -149,5 +149,6 @@ alias pinstall="sudo $PACKMANAGE -i"
 alias premove="sudo $PACKMANAGE -r"
 alias pfind='apt-cache search'
 alias pupdate='sudo apt-get update && sudo apt-file update -N'
+alias pupgrade='sudo apt-get upgrade'
 alias pfile='apt-file find'
 pshow() { apt-cache show "$@"; apt-cache policy "$@"; }
