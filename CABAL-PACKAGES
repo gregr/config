@@ -1,6 +1,5 @@
-data-lens
-data-lens-template
-data-lens-fd
+gloss
 hlist
-riak
+lens
 protocol-buffers
+riak
