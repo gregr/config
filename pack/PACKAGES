@@ -7,6 +7,7 @@ chromium-browser
 chromium-codecs-ffmpeg-extra
 coq
 default-jdk
+dosbox
 elinks
 emacs
 erlang
@@ -24,6 +25,7 @@ icedtea-plugin
 ipython
 irssi
 irssi-scripts
+lambdabot
 libboost-dev
 libsdl-image1.2-dev
 libsdl-ttf2.0-dev
