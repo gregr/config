@@ -14,8 +14,9 @@
 	co = checkout
 	df = diff
 	gr = grep --color -n
-	l = log --graph --all --pretty=format:'%C(bold red)%h%Creset -%C(bold yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
-	lg = log --graph --all --pretty=format:'%C(bold red)%h%Creset -%C(bold yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset'
+	l = log --graph --pretty=format:'%C(bold red)%h%Creset -%C(bold yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	la = log --graph --all --pretty=format:'%C(bold red)%h%Creset -%C(bold yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	lg = log --graph --pretty=format:'%C(bold red)%h%Creset -%C(bold yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset'
 	rb = rebase
 	rbi = rebase -i
 	sh = show
