@@ -124,6 +124,7 @@ extract() {
   fi
 }
 
+findn() { FNAME="$1"; shift; find-vcs . -name "$FNAME" -print "$@"; }
 field() { prog='{ print $'"$1"' }'; awk "$prog"; }
 git-files() {
   git $2 $3 --name-status --pretty=oneline |
@@ -136,6 +137,7 @@ alias vimo='vim -O'
 vsh() { vimo `gsh $1`; }
 vdf() { vimo `gdf $1`; }
 vgrep() { vimo `grep-files "$@"`; }
+vfind() { vimo `findn "$@"`; }
 
 summ() { awk '{for (i = 1; i <= NF; ++i) total+=$i;} END{print total}'; }
 alias lcr="find . -type f -exec wc -l {} \; | summ"
