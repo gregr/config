@@ -16,6 +16,8 @@ set statusline=\ %n\ %F%m%r%y%{fugitive#statusline()}\ %w%=[\ %l/%L:%c\ ]
 set wildmenu wildmode=list:longest,full
 set list listchars=tab:>-,trail:-
 set ts=2 sts=2 sw=2 expandtab
+set completeopt=longest,menuone
+set showfulltag
 
 syntax on
 filetype plugin indent on
@@ -83,6 +85,8 @@ cnoremap <C-f> <Right>
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 cnoremap <C-d> <Del>
+
+inoremap <C-n> <C-x><C-o>
 
 nnoremap <C-p> :bprev<CR>
 nnoremap <C-n> :bnext<CR>
