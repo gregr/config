@@ -7,19 +7,26 @@
 	interactive = auto
 	status = auto
 [alias]
+	am = commit --amend
 	br = branch -v
 	bra = branch -va
 	chp = cherry-pick
 	ci = commit
 	co = checkout
 	df = diff
+	dfc = diff --cached
+	dfn = diff --name-status
 	gr = grep --color -n
 	l = log --graph --pretty=format:'%C(bold red)%h%Creset -%C(bold yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
-	la = log --graph --all --pretty=format:'%C(bold red)%h%Creset -%C(bold yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	la = log --all --graph --pretty=format:'%C(bold red)%h%Creset -%C(bold yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 	lg = log --graph --pretty=format:'%C(bold red)%h%Creset -%C(bold yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset'
+	lt = log --graph --oneline --decorate
+	lta = log --all --graph --oneline --decorate
 	rb = rebase
 	rbi = rebase -i
 	sh = show
+	shn = show --name-status
 	st = status
+	subup = submodule update --init --recursive
 [core]
 	excludesfile = ~/.gitignore
