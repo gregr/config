@@ -3,13 +3,16 @@
 	url = https://github.com/tpope/vim-pathogen.git
 [submodule "dotfiles/src/.vim/bundle/fugitive"]
 	path = dotfiles/src/.vim/bundle/fugitive
-	url = http://github.com/tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "dotfiles/src/.vim/bundle/nerdcommenter"]
 	path = dotfiles/src/.vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "dotfiles/src/.vim/bundle/unimpaired"]
 	path = dotfiles/src/.vim/bundle/unimpaired
-	url = git://github.com/tpope/vim-unimpaired.git
+	url = https://github.com/tpope/vim-unimpaired.git
 [submodule "dotfiles/src/.vim/bundle/tabular"]
 	path = dotfiles/src/.vim/bundle/tabular
-	url = git://github.com/godlygeek/tabular.git
+	url = https://github.com/godlygeek/tabular.git
+[submodule "dotfiles/src/.vim/bundle/tagbar"]
+	path = dotfiles/src/.vim/bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
