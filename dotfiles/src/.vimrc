@@ -57,6 +57,11 @@ let g:netrw_liststyle = 0
 let g:netrw_browse_split = 0
 let g:netrw_altv = 1
 
+let g:tagbar_compact = 1
+let g:tagbar_indent = 1
+let g:tagbar_autoclose = 1
+let g:tagbar_autofocus = 1
+
 let mapleader = ","
 noremap ; :
 nnoremap Y y$
@@ -87,6 +92,8 @@ cnoremap <C-n> <Down>
 cnoremap <C-d> <Del>
 
 inoremap <C-n> <C-x><C-o>
+
+nnoremap <leader>tt :TagbarToggle<CR>
 
 nnoremap <C-p> :bprev<CR>
 nnoremap <C-n> :bnext<CR>
