@@ -7,10 +7,10 @@
 	interactive = auto
 	status = auto
 [alias]
-	am = commit --amend
 	br = branch -v
 	bra = branch -va
 	chp = cherry-pick
+	ca = commit --amend
 	ci = commit
 	co = checkout
 	df = diff
