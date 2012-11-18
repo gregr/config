@@ -33,6 +33,13 @@ endfun
 fun! <SID>RStripAll()
   call <SID>PreserveExec("%s/\\s\\+$//e")
 endfun
+fun! <SID>BufMakeScratch()
+  setl buftype=nofile
+  setl bufhidden=hide
+  setl noswapfile
+  setl buflisted
+endfun
+command! BufScratch vnew<bar>call <SID>BufMakeScratch()
 
 augroup AutoloadVimrc
   autocmd!
@@ -97,16 +104,15 @@ nnoremap <leader>tt :TagbarToggle<CR>
 
 nnoremap <C-p> :bprev<CR>
 nnoremap <C-n> :bnext<CR>
-nnoremap <leader>bb :buffers<CR>:buffer<space>
+nnoremap <leader>bb :ls<CR>:buffer<space>
+nnoremap <leader>bs :BufScratch<CR>
+nnoremap <leader>bd :bd<CR>
+nnoremap <leader>bc :bp<bar>sp<bar>bn<bar>bd<CR>
 
-nnoremap <leader>dd :bp<bar>sp<bar>bn<bar>bd<CR>
-nnoremap <leader>dc :bd<CR>
-nnoremap <leader>D :bd!<CR>
-
-nnoremap <leader>gg :vnew<bar>r!git<space>grep<space>''<left>
-nnoremap <leader>gG :vnew<bar>r!grep-vcs<space>-r<space>.<space>-e<space>''<left>
-nnoremap <leader>ff :vnew<bar>r!find-vcs<space>.<space>-name<space>''<space>-print<left><left><left><left><left><left><left><left>
-nnoremap <leader>fF :vnew<bar>r!find<space>.<space>-regextype<space>posix-extended<space>-regex<space>''<left>
+nnoremap <leader>gg :BufScratch<bar>r!git<space>grep<space>''<left>
+nnoremap <leader>gG :BufScratch<bar>r!grep-vcs<space>-r<space>.<space>-e<space>''<left>
+nnoremap <leader>ff :BufScratch<bar>r!find-vcs<space>.<space>-name<space>''<space>-print<left><left><left><left><left><left><left><left>
+nnoremap <leader>fF :BufScratch<bar>r!find<space>.<space>-regextype<space>posix-extended<space>-regex<space>''<left>
 
 cnoremap %% <C-R>=expand("%:p:h")."/"<CR>
 map <leader>ee :vs<space>%%<CR>
