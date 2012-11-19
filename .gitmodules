@@ -19,3 +19,6 @@
 [submodule "dotfiles/src/.vim/bundle/ctrlp.vim"]
 	path = dotfiles/src/.vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
+[submodule "dotfiles/src/.vim/bundle/syntastic"]
+	path = dotfiles/src/.vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
