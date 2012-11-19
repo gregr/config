@@ -60,6 +60,8 @@ augroup AutoFileType
   autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
 augroup END
 
+let mapleader = ","
+
 let g:netrw_liststyle = 0
 let g:netrw_browse_split = 0
 let g:netrw_altv = 1
@@ -69,7 +71,8 @@ let g:tagbar_indent = 1
 let g:tagbar_autoclose = 1
 let g:tagbar_autofocus = 1
 
-let mapleader = ","
+let g:ctrlp_map = '<leader>pp'
+
 noremap ; :
 nnoremap Y y$
 
