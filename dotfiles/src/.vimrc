@@ -71,7 +71,7 @@ let g:tagbar_indent = 1
 let g:tagbar_autoclose = 1
 let g:tagbar_autofocus = 1
 
-let g:ctrlp_map = '<leader>pp'
+let g:ctrlp_map = '<leader>ff'
 
 let g:syntastic_check_on_open = 1
 let g:syntastic_auto_loc_list = 1
@@ -118,8 +118,7 @@ nnoremap <leader>bc :bp<bar>sp<bar>bn<bar>bd<CR>
 
 nnoremap <leader>gg :BufScratch<bar>r!git<space>grep<space>''<left>
 nnoremap <leader>gG :BufScratch<bar>r!grep-vcs<space>-r<space>.<space>-e<space>''<left>
-nnoremap <leader>ff :BufScratch<bar>r!find-vcs<space>.<space>-name<space>''<space>-print<left><left><left><left><left><left><left><left>
-nnoremap <leader>fF :BufScratch<bar>r!find<space>.<space>-regextype<space>posix-extended<space>-regex<space>''<left>
+nnoremap <leader>fF :BufScratch<bar>r!find-vcs<space>.<space>-name<space>''<space>-print<left><left><left><left><left><left><left><left>
 
 cnoremap %% <C-R>=expand("%:p:h")."/"<CR>
 map <leader>ee :vs<space>%%<CR>
