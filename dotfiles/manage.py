@@ -3,7 +3,6 @@ from argparse import ArgumentParser
 import errno
 import os
 import shutil
-from subprocess import call
 import sys
 
 dotfiles_path = os.path.realpath(os.path.dirname(sys.argv[0]))
