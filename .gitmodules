@@ -31,3 +31,6 @@
 [submodule "dotfiles/src/.vim/bundle/vim-conque"]
 	path = dotfiles/src/.vim/bundle/vim-conque
 	url = https://github.com/rson/vim-conque.git
+[submodule "dotfiles/src/.vim/bundle/vim-surround"]
+	path = dotfiles/src/.vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
