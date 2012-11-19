@@ -73,7 +73,9 @@ let g:tagbar_autofocus = 1
 
 let g:ctrlp_map = '<leader>pp'
 
-let g:syntastic_python_checker_args = '--ignore=E302,E111,E701'
+let g:syntastic_check_on_open = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_python_checker_args = '--ignore=E111,E121,E123,E125,E301,E302,E401,E701,E702,W191'
 
 noremap ; :
 nnoremap Y y$
