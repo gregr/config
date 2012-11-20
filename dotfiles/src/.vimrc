@@ -72,6 +72,8 @@ let g:tagbar_autoclose = 1
 let g:tagbar_autofocus = 1
 
 let g:ctrlp_map = '<leader>ff'
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 let g:syntastic_check_on_open = 1
 let g:syntastic_auto_loc_list = 1
