@@ -83,6 +83,8 @@ let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_enable_smart_case = 1
 let g:neocomplcache_enable_insert_char_pre = 1
 
+let ConqueTerm_EscKey = '<C-c>'
+
 noremap ; :
 nnoremap Y y$
 
@@ -121,6 +123,7 @@ nnoremap <leader>bb :ls<CR>:buffer<space>
 nnoremap <leader>bs :BufScratch<CR>
 nnoremap <leader>bd :bd<CR>
 nnoremap <leader>bc :bp<bar>sp<bar>bn<bar>bd<CR>
+nnoremap <leader>bt :ConqueTermV<space>bash<CR>
 
 nnoremap <leader>gg :BufScratch<bar>r!git<space>grep<space>''<left>
 nnoremap <leader>gG :BufScratch<bar>r!grep-vcs<space>-r<space>.<space>-e<space>''<left>
