@@ -39,7 +39,7 @@ fun! <SID>BufMakeScratch()
   setl noswapfile
   setl buflisted
 endfun
-command! BufScratch vnew<bar>call <SID>BufMakeScratch()
+command! -bar BufScratch vnew|call <SID>BufMakeScratch()
 
 augroup AutoloadVimrc
   autocmd!
