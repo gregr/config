@@ -84,6 +84,7 @@ let g:neocomplcache_enable_smart_case = 1
 let g:neocomplcache_enable_insert_char_pre = 1
 
 let ConqueTerm_EscKey = '<C-c>'
+let ConqueTerm_SendVisKey = '<leader>bp'
 
 noremap ; :
 nnoremap Y y$
