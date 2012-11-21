@@ -28,6 +28,6 @@
 [submodule "dotfiles/src/.vim/bundle/AutoTag"]
 	path = dotfiles/src/.vim/bundle/AutoTag
 	url = https://github.com/vim-scripts/AutoTag.git
-[submodule "dotfiles/src/.vim/bundle/Concque-Shell"]
-	path = dotfiles/src/.vim/bundle/Concque-Shell
-	url = https://github.com/vim-scripts/Conque-Shell.git
+[submodule "dotfiles/src/.vim/bundle/vim-conque"]
+	path = dotfiles/src/.vim/bundle/vim-conque
+	url = https://github.com/rson/vim-conque.git
