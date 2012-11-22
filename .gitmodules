@@ -34,3 +34,6 @@
 [submodule "dotfiles/src/.vim/bundle/vim-surround"]
 	path = dotfiles/src/.vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "dotfiles/src/.vim/bundle/vim-repeat"]
+	path = dotfiles/src/.vim/bundle/vim-repeat
+	url = https://github.com/tpope/vim-repeat.git
