@@ -37,3 +37,6 @@
 [submodule "dotfiles/src/.vim/bundle/vim-repeat"]
 	path = dotfiles/src/.vim/bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
+[submodule "dotfiles/src/.vim/bundle/vim-afterimage"]
+	path = dotfiles/src/.vim/bundle/vim-afterimage
+	url = https://github.com/tpope/vim-afterimage.git
