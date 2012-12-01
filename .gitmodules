@@ -40,3 +40,6 @@
 [submodule "dotfiles/src/.vim/bundle/vim-afterimage"]
 	path = dotfiles/src/.vim/bundle/vim-afterimage
 	url = https://github.com/tpope/vim-afterimage.git
+[submodule "dotfiles/src/.vim/bundle/vim-coffee-script"]
+	path = dotfiles/src/.vim/bundle/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script
