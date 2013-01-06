@@ -134,4 +134,7 @@ cnoremap %% <C-R>=expand("%:p:h")."/"<CR>
 map <leader>ee :vs<space>%%<CR>
 map <leader>eE :e<space>%%<CR>
 
+nnoremap <leader>coc :CoffeeCompile<CR>
+nnoremap <leader>com :CoffeeMake<CR>
+
 color desert
