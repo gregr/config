@@ -94,6 +94,8 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+nnoremap <leader>mm <C-w><bar>
+nnoremap <leader>mn <C-w>_
 nnoremap <C-m> <C-w>=
 nnoremap _ <C-w>-
 nnoremap + <C-w>+
