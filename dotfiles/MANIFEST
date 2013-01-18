@@ -12,6 +12,7 @@
 .vim/bundle
 .vimrc
 bin/find-vcs
+bin/git-land
 bin/grep-files
 bin/grep-vcs
 git-completion.bash
