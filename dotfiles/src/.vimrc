@@ -62,10 +62,6 @@ augroup END
 
 let mapleader = ","
 
-let g:netrw_liststyle = 0
-let g:netrw_browse_split = 0
-let g:netrw_altv = 1
-
 let g:tagbar_compact = 1
 let g:tagbar_indent = 1
 let g:tagbar_autoclose = 1
@@ -78,6 +74,8 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:syntastic_check_on_open = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_python_checker_args = '--ignore=E111,E121,E123,E125,E301,E302,E401,E701,E702,W191'
+
+let NERDTreeShowHidden=1
 
 let ConqueTerm_EscKey = '<C-c>'
 let ConqueTerm_SendVisKey = '<leader>bp'
@@ -123,14 +121,15 @@ nnoremap <leader>bs :BufScratch<CR>
 nnoremap <leader>bd :bd<CR>
 nnoremap <leader>bc :bp<bar>sp<bar>bn<bar>bd<CR>
 nnoremap <leader>bt :ConqueTermV<space>bash<CR>
+nnoremap <leader>nn :NERDTreeToggle<CR>
 
 nnoremap <leader>gg :BufScratch<bar>r!git<space>grep<space>''<left>
 nnoremap <leader>gG :BufScratch<bar>r!grep-vcs<space>-r<space>.<space>-e<space>''<left>
 nnoremap <leader>fF :BufScratch<bar>r!find-vcs<space>.<space>-name<space>''<space>-print<left><left><left><left><left><left><left><left>
 
 cnoremap %% <C-R>=expand("%:p:h")."/"<CR>
-map <leader>ee :vs<space>%%<CR>
-map <leader>eE :e<space>%%<CR>
+map <leader>ee :NERDTree<space>
+map <leader>eE :NERDTree<space>%%<CR>
 
 nnoremap <leader>coc :CoffeeCompile<CR>
 nnoremap <leader>com :CoffeeMake<CR>
