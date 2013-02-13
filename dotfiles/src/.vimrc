@@ -105,9 +105,6 @@ vmap <C-j> ]egv
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 cnoremap <C-b> <Left>
-cnoremap <C-f> <Right>
-cnoremap <C-p> <Up>
-cnoremap <C-n> <Down>
 cnoremap <C-d> <Del>
 
 inoremap <C-n> <C-x><C-o>
