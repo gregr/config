@@ -124,6 +124,11 @@ nnoremap <leader>qq :copen<CR>
 nnoremap <leader>qc :cclose<CR>
 nnoremap <leader>qj :.cc<CR>
 
+nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>gd :Gdiff<CR>
+nnoremap <leader>gl :Glog<space>-20<space>--<space>%<CR>
+
 nnoremap <leader>gg :BufScratch<bar>r!git<space>grep<space>''<left>
 nnoremap <leader>gG :BufScratch<bar>r!grep-vcs<space>-r<space>.<space>-e<space>''<left>
 nnoremap <leader>fF :BufScratch<bar>r!find-vcs<space>.<space>-name<space>''<space>-print<left><left><left><left><left><left><left><left>
