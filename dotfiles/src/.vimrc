@@ -139,5 +139,3 @@ map <leader>eE :NERDTree<space>%%<CR>
 
 nnoremap <leader>coc :CoffeeCompile<CR>
 nnoremap <leader>com :CoffeeMake<CR>
-
-color desert
