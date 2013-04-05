@@ -43,3 +43,6 @@
 [submodule "dotfiles/src/.vim/bundle/nerdtree"]
 	path = dotfiles/src/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "dotfiles/src/.vim/bundle/vim-visual-star-search"]
+	path = dotfiles/src/.vim/bundle/vim-visual-star-search
+	url = https://github.com/nelstrom/vim-visual-star-search.git
