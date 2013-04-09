@@ -31,3 +31,5 @@
 	land = !git-land
 [core]
 	excludesfile = ~/.gitignore
+[merge]
+	conflictstyle = diff3
