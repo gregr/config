@@ -9,6 +9,7 @@ chromium-codecs-ffmpeg-extra
 coffeescript
 coq
 default-jdk
+dos2unix
 dosbox
 elinks
 emacs
