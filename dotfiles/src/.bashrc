@@ -154,4 +154,5 @@ alias pupdate='sudo apt-get update && sudo apt-file update -N'
 alias pupgrade='sudo apt-get upgrade'
 alias pfile='apt-file find'
 alias pfilesof='dpkg -L'
+alias ppstree='pstree -p | grep package-data-do'
 pshow() { apt-cache show "$@"; apt-cache policy "$@"; }
