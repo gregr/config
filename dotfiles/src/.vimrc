@@ -123,6 +123,11 @@ nnoremap <leader>bc :bp<bar>sp<bar>bn<bar>bd<CR>
 nnoremap <leader>bt :ConqueTermV<space>bash<CR>
 nnoremap <leader>nn :NERDTreeToggle<CR>
 
+let @R='F(v%,bp'
+let @V=',bp'
+nnoremap <leader>rr @R
+vnoremap <leader>rr @V
+
 nnoremap <leader>qq :copen<CR>
 nnoremap <leader>qc :cclose<CR>
 nnoremap <leader>qj :.cc<CR>
