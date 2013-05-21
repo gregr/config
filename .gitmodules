@@ -46,3 +46,6 @@
 [submodule "dotfiles/src/.vim/bundle/vim-visual-star-search"]
 	path = dotfiles/src/.vim/bundle/vim-visual-star-search
 	url = https://github.com/nelstrom/vim-visual-star-search.git
+[submodule "dotfiles/src/.vim/bundle/conque-repl.git"]
+	path = dotfiles/src/.vim/bundle/conque-repl.git
+	url = https://github.com/vim-scripts/conque-repl.vim.git
