@@ -49,3 +49,6 @@
 [submodule "dotfiles/src/.vim/bundle/conque-repl.git"]
 	path = dotfiles/src/.vim/bundle/conque-repl.git
 	url = https://github.com/vim-scripts/conque-repl.vim.git
+[submodule "dotfiles/src/.vim/bundle/vim-conque-repl.git"]
+	path = dotfiles/src/.vim/bundle/vim-conque-repl.git
+	url = https://github.com/gregr/vim-conque-repl.git
