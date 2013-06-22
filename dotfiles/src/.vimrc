@@ -140,8 +140,8 @@ nnoremap <leader>gG :BufScratch<bar>r!grep-vcs<space>-r<space>.<space>-e<space>'
 nnoremap <leader>fF :BufScratch<bar>r!find-vcs<space>.<space>-name<space>''<space>-print<left><left><left><left><left><left><left><left>
 
 cnoremap %% <C-R>=expand("%:p:h")."/"<CR>
-map <leader>ee :NERDTree<space>
-map <leader>eE :NERDTree<space>%%<CR>
+map <leader>ee :NERDTree<space>%%<CR>
+nnoremap <leader>eE :NERDTree<space>
 
 nnoremap <leader>coc :CoffeeCompile<CR>
 nnoremap <leader>com :CoffeeMake<CR>
