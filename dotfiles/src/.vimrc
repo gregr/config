@@ -116,6 +116,9 @@ nnoremap <leader>tt :TagbarToggle<CR>
 vnoremap <leader>ta :Tabularize/=
 vnoremap <leader>tz :Tabularize/:\zs<left><left><left>
 
+nnoremap > :tabnext<CR>
+nnoremap < :tabprev<CR>
+
 nnoremap <C-p> :bprev<CR>
 nnoremap <C-n> :bnext<CR>
 nnoremap <leader>bb :ls<CR>:buffer<space>
