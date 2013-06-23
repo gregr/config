@@ -39,21 +39,20 @@ class Runner(object):
     return call(cmd)
   def run(self):
     os.chdir(config_path)
-    #self.pack_install(primary_packages)
-    self.pack_install(extra_packages)
+    self.pack_install(primary_packages)
     dryrun = self.opts.dryrun and ['--dryrun'] or []
     print 'dryrun:', dryrun
     self.call([dotfile_manage, '--install'] + dryrun)
     self.call(['git', 'submodule', 'update', '--init'])
-    if True:  # self.opts.basic:
-      #self.pack_install(secondary_packages)
+    if self.opts.basic:
+      self.pack_install(secondary_packages)
       def call_each(ppath, cmd):
         for line in open(ppath):
           package = line.strip()
           if package: self.call(cmd + [package])
       call_each(cabal_packages, ['cabal', 'install'])
       call_each(pip_packages, ['sudo', 'pip', 'install'])
-    #if self.opts.all: self.pack_install(extra_packages)
+    if self.opts.all: self.pack_install(extra_packages)
 
 def main(argv): Runner(parse(argv)).run()
 if __name__ == '__main__': main(sys.argv[1:])
