@@ -28,21 +28,18 @@ def parse(argv):
 class Runner(object):
   def __init__(self, opts): self.opts = opts
   def pack_install(self, filename):
-    if self.opts.dryrun:
-      print 'would install packages from:', filename
-    else:
-      self.call(['sudo', pack_manage, '--reinstall', '--filename', filename])
+    self.call(['sudo', pack_manage, '--reinstall', '--filename', filename])
   def call(self, cmd):
     if self.opts.dryrun:
       print 'call:', cmd
       return
     return call(cmd)
   def run(self):
+    if self.opts.dryrun: print '[dry-run only]'
     os.chdir(config_path)
     self.pack_install(primary_packages)
     dryrun = self.opts.dryrun and ['--dryrun'] or []
-    print 'dryrun:', dryrun
-    self.call([dotfile_manage, '--install'] + dryrun)
+    call([dotfile_manage, '--install'] + dryrun)
     self.call(['git', 'submodule', 'update', '--init'])
     if self.opts.basic:
       self.pack_install(secondary_packages)
