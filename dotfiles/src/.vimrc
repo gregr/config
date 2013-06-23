@@ -96,6 +96,8 @@ nnoremap + <C-w>+
 nnoremap - <C-w><
 nnoremap = <C-w>>
 
+nnoremap zI :set foldmethod=indent<CR>
+
 nnoremap gF :vertical wincmd f<CR>
 "select most recently modified text
 nnoremap gV `[V`]
