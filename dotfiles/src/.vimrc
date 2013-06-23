@@ -143,5 +143,16 @@ cnoremap %% <C-R>=expand("%:p:h")."/"<CR>
 map <leader>ee :NERDTree<space>%%<CR>
 nnoremap <leader>eE :NERDTree<space>
 
+set sessionoptions-=options
+let g:session_autoload = 'no'
+let g:session_autosave = 'no'
+nnoremap <leader>ss :SaveSession <left><right>
+nnoremap <leader>so :OpenSession<CR>
+nnoremap <leader>sc :CloseSession<CR>
+nnoremap <leader>sd :DeleteSession<CR>
+nnoremap <leader>sts :SaveTabSession <left><right>
+nnoremap <leader>sto :AppendTabSession<CR>
+nnoremap <leader>stc :CloseTabSession<CR>
+
 nnoremap <leader>coc :CoffeeCompile<CR>
 nnoremap <leader>com :CoffeeMake<CR>
