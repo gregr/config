@@ -55,3 +55,6 @@
 [submodule "dotfiles/src/.vim/bundle/vim-misc"]
 	path = dotfiles/src/.vim/bundle/vim-misc
 	url = https://github.com/xolox/vim-misc.git
+[submodule "dotfiles/src/.vim/bundle/vim-session"]
+	path = dotfiles/src/.vim/bundle/vim-session
+	url = https://github.com/xolox/vim-session.git
