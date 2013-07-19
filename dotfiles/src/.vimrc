@@ -140,6 +140,7 @@ nnoremap <leader>qq :copen<CR>
 nnoremap <leader>qc :cclose<CR>
 nnoremap <leader>qj :.cc<CR>
 
+nnoremap <leader>ge :Gedit<space>
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gd :Gdiff<CR>
