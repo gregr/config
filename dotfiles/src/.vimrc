@@ -40,6 +40,11 @@ fun! <SID>BufMakeScratch()
   setl buflisted
 endfun
 command! -bar BufScratch tabnew|call <SID>BufMakeScratch()
+fun! <SID>ReOpenBuffers()
+  bufdo e
+  syntax on
+endfun
+command! -bar BufReOpen call <SID>ReOpenBuffers()
 
 augroup AutoloadVimrc
   autocmd!
