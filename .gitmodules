@@ -58,3 +58,6 @@
 [submodule "dotfiles/src/.vim/bundle/vim-session"]
 	path = dotfiles/src/.vim/bundle/vim-session
 	url = https://github.com/xolox/vim-session.git
+[submodule "dotfiles/src/.vim/bundle/rainbow_parentheses"]
+	path = dotfiles/src/.vim/bundle/rainbow_parentheses
+	url = https://github.com/kien/rainbow_parentheses.vim
