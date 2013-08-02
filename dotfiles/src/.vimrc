@@ -60,6 +60,9 @@ augroup END
 augroup AutoFileType
   autocmd!
   autocmd BufRead,BufNewFile *.rkt set filetype=scheme
+  autocmd FileType scheme setl lispwords+=define-values,define-struct,define-syntax-parameter
+  autocmd FileType scheme setl lispwords+=match,match*,match-let,match-let*,match-letrec,match-lambda,match-lambda*,match-lambda**,define/match
+  autocmd FileType scheme setl lispwords+=define-type,define:,define-struct:,let:,let*:,letrec:,lambda:
   autocmd BufRead,BufNewFile SConstruct set filetype=python
   autocmd BufReadPost fugitive://* set bufhidden=delete
   autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
