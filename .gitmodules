@@ -61,3 +61,6 @@
 [submodule "dotfiles/src/.vim/bundle/rainbow_parentheses"]
 	path = dotfiles/src/.vim/bundle/rainbow_parentheses
 	url = https://github.com/kien/rainbow_parentheses.vim
+[submodule "dotfiles/src/.vim/bundle/coq"]
+	path = dotfiles/src/.vim/bundle/coq
+	url = https://github.com/jvoorhis/coq.vim.git
