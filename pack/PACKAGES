@@ -1,5 +1,8 @@
+ant
 chromium-browser
 chromium-codecs-ffmpeg-extra
+clojure
+darcs
 default-jdk
 dosbox
 elinks
@@ -21,6 +24,7 @@ netrik
 node-underscore
 nodejs
 npm
+ocaml
 octave3.2
 p7zip-full
 polipo
