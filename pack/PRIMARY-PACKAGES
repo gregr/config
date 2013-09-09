@@ -1,6 +1,5 @@
 apt-file
 git
-screen
 ssh
 tmux
 vim-gnome
