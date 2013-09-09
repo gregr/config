@@ -94,6 +94,7 @@ let g:rbpt_colorpairs = [
 
 let mapleader = ","
 
+let g:CoqIDEDefaultMap = 1
 let g:tagbar_compact = 1
 let g:tagbar_indent = 1
 let g:tagbar_autoclose = 1
