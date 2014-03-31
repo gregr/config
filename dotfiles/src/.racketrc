@@ -1,2 +1,2 @@
-;; load readline support (added by `install-readline!')
-(require readline/rep)
+;; The following line loads `xrepl' support
+(require xrepl)
