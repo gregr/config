@@ -145,6 +145,8 @@ alias lcr="find . -type f -exec wc -l {} \; | summ"
 
 racki() { racket -ie '(enter! "'$1'")'; }
 
+pretty-json() { cat $1 | python -mjson.tool | colout -t json | less -RXF; }
+
 PACKDIR='~/config/pack'
 PACKMANAGE="$PACKDIR/manage.py"
 alias plist="cat $PACKDIR/PACKAGES"
