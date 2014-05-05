@@ -144,6 +144,7 @@ summ() { awk '{for (i = 1; i <= NF; ++i) total+=$i;} END{print total}'; }
 alias lcr="find . -type f -exec wc -l {} \; | summ"
 
 racki() { racket -ie '(enter! "'$1'")'; }
+alias racket-tags="ctags --langmap=scheme:.rkt -R ."
 
 pretty-json() { cat $1 | python -mjson.tool | colout -t json | less -RXF; }
 
