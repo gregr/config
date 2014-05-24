@@ -40,6 +40,9 @@ fun! <SID>BufMakeScratch()
   setl buflisted
 endfun
 command! -bar BufScratch tabnew|call <SID>BufMakeScratch()
+command! -bar BufScratchTab tabnew|call <SID>BufMakeScratch()
+command! -bar BufScratchVSplit vnew|call <SID>BufMakeScratch()
+command! -bar BufScratchSplit new|call <SID>BufMakeScratch()
 fun! <SID>ReOpenBuffers()
   bufdo e
   syntax on
@@ -155,7 +158,9 @@ nnoremap < :tabprev<CR>
 nnoremap <C-p> :bprev<CR>
 nnoremap <C-n> :bnext<CR>
 nnoremap <leader>bb :ls<CR>:buffer<space>
-nnoremap <leader>bs :BufScratch<CR>
+nnoremap <leader>bst :BufScratchTab<CR>
+nnoremap <leader>bsv :BufScratchVSplit<CR>
+nnoremap <leader>bss :BufScratchSplit<CR>
 nnoremap <leader>bd :bd<CR>
 nnoremap <leader>bc :bp<bar>sp<bar>bn<bar>bd<CR>
 nnoremap <leader>bt :ConqueTermV<space>bash<CR>
@@ -174,9 +179,9 @@ nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gl :Glog<space>-20<space>--<space>%<CR>
 
-nnoremap <leader>gg :BufScratch<bar>r!git<space>grep<space>''<left>
-nnoremap <leader>gG :BufScratch<bar>r!grep-vcs<space>-r<space>.<space>-e<space>''<left>
-nnoremap <leader>fF :BufScratch<bar>r!find-vcs<space>.<space>-name<space>''<space>-print<left><left><left><left><left><left><left><left>
+nnoremap <leader>gg :BufScratchTab<bar>r!git<space>grep<space>''<left>
+nnoremap <leader>gG :BufScratchTab<bar>r!grep-vcs<space>-r<space>.<space>-e<space>''<left>
+nnoremap <leader>fF :BufScratchTab<bar>r!find-vcs<space>.<space>-name<space>''<space>-print<left><left><left><left><left><left><left><left>
 
 cnoremap %% <C-R>=expand("%:p:h")."/"<CR>
 map <leader>ee :NERDTree<space>%%<CR>
