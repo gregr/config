@@ -7,7 +7,7 @@ default-jdk
 dosbox
 elinks
 htop
-icedtea-plugin
+icedtea-7-plugin
 iftop
 ipython
 irssi
@@ -29,6 +29,7 @@ nodejs
 npm
 ocaml
 octave3.2
+openjdk-7-jre
 p7zip-full
 polipo
 python-dev
