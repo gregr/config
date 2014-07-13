@@ -61,3 +61,6 @@
 [submodule "dotfiles/src/.vim/bundle/coq"]
 	path = dotfiles/src/.vim/bundle/coq
 	url = https://github.com/jvoorhis/coq.vim.git
+[submodule "dotfiles/src/.vim/bundle/vim-conque"]
+	path = dotfiles/src/.vim/bundle/vim-conque
+	url = https://github.com/basepi/vim-conque.git
