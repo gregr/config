@@ -8,6 +8,7 @@ dosbox
 elinks
 htop
 icedtea-plugin
+iftop
 ipython
 irssi
 irssi-scripts
@@ -21,6 +22,7 @@ links
 links2
 lynx
 markdown
+nethogs
 netrik
 node-underscore
 nodejs
@@ -39,6 +41,7 @@ scala
 swig
 texlive
 tor
+traceroute
 vde2
 vidalia
 virt-manager
