@@ -139,6 +139,7 @@ vsh() { vimo `gsh $1`; }
 vdf() { vimo `gdf $1`; }
 vgrep() { vimo `grep-files "$@"`; }
 vfind() { vimo `findn "$@"`; }
+vsession() { vim -S "$HOME/.vim/sessions/$1.vim"; }
 
 summ() { awk '{for (i = 1; i <= NF; ++i) total+=$i;} END{print total}'; }
 alias lcr="find . -type f -exec wc -l {} \; | summ"
