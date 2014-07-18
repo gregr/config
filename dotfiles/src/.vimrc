@@ -184,8 +184,12 @@ nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gl :Glog<space>-20<space>--<space>%<CR>
 
-nnoremap <leader>gg :BufScratchTab<bar>r!git<space>grep<space>''<left>
-nnoremap <leader>gG :BufScratchTab<bar>r!grep-vcs<space>-r<space>.<space>-e<space>''<left>
+nnoremap <leader>ggt :BufScratchTab<bar>r!git<space>grep<space>''<left>
+nnoremap <leader>ggv :BufScratchVSplit<bar>r!git<space>grep<space>''<left>
+nnoremap <leader>ggs :BufScratchSplit<bar>r!git<space>grep<space>''<left>
+nnoremap <leader>gGt :BufScratchTab<bar>r!grep-vcs<space>-r<space>.<space>-e<space>''<left>
+nnoremap <leader>gGv :BufScratchVSplit<bar>r!grep-vcs<space>-r<space>.<space>-e<space>''<left>
+nnoremap <leader>gGs :BufScratchSplit<bar>r!grep-vcs<space>-r<space>.<space>-e<space>''<left>
 nnoremap <leader>fF :BufScratchTab<bar>r!find-vcs<space>.<space>-name<space>''<space>-print<left><left><left><left><left><left><left><left>
 
 cnoremap %% <C-R>=expand("%:p:h")."/"<CR>
