@@ -166,8 +166,13 @@ nnoremap <leader>bc :bp<bar>sp<bar>bn<bar>bd<CR>
 nnoremap <leader>bt :ConqueTermV<space>bash<CR>
 nnoremap <leader>nn :NERDTreeToggle<CR>
 
-let g:conque_repl_send_key = '<leader>rr'
-nmap <leader>ra ,btracket
+"let g:conque_repl_send_key = '<leader>rr'
+"nmap <leader>ra ,btracket
+
+nnoremap <leader>rrr :r!
+nnoremap <leader>rrt :BufScratchTab<bar>r!
+nnoremap <leader>rrv :BufScratchVSplit<bar>r!
+nnoremap <leader>rrs :BufScratchSplit<bar>r!
 
 nnoremap <leader>qq :copen<CR>
 nnoremap <leader>qc :cclose<CR>
