@@ -61,3 +61,6 @@
 [submodule "dotfiles/src/.vim/bundle/vim-conque"]
 	path = dotfiles/src/.vim/bundle/vim-conque
 	url = https://github.com/basepi/vim-conque.git
+[submodule "dotfiles/src/.vim/bundle/vim-togglelist"]
+	path = dotfiles/src/.vim/bundle/vim-togglelist
+	url = git@github.com:milkypostman/vim-togglelist.git
