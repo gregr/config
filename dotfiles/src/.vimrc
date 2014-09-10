@@ -124,9 +124,9 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-nnoremap <leader>mm <C-w><bar>
-nnoremap <leader>mn <C-w>_
-nnoremap <C-m> <C-w>=
+nnoremap <leader>mm <C-w>=
+nnoremap <leader>mh <C-w><bar>
+nnoremap <leader>mj <C-w>_
 nnoremap _ <C-w>-
 nnoremap + <C-w>+
 nnoremap - <C-w><
@@ -176,7 +176,6 @@ nnoremap <leader>rrs :BufScratchSplit<bar>r!
 
 nnoremap <leader>qq :copen<CR>
 nnoremap <leader>qc :cclose<CR>
-nnoremap <leader>qj :.cc<CR>
 
 nnoremap <leader>ge :Gedit<space>
 nnoremap <leader>gs :Gstatus<CR>
