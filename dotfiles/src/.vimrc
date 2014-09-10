@@ -103,6 +103,8 @@ let g:tagbar_indent = 1
 let g:tagbar_autoclose = 1
 let g:tagbar_autofocus = 1
 
+let g:toggle_list_no_mappings = 1
+
 let g:ctrlp_map = '<leader>ff'
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
@@ -147,6 +149,9 @@ cnoremap <C-d> <Del>
 
 inoremap <C-n> <C-x><C-o>
 
+nnoremap <leader>ll :call ToggleLocationList()<CR>
+nnoremap <leader>qq :call ToggleQuickfixList()<CR>
+
 nnoremap <leader>tt :TagbarToggle<CR>
 
 vnoremap <leader>ta :Tabularize/=
@@ -173,9 +178,6 @@ nnoremap <leader>rrr :r!
 nnoremap <leader>rrt :BufScratchTab<bar>r!
 nnoremap <leader>rrv :BufScratchVSplit<bar>r!
 nnoremap <leader>rrs :BufScratchSplit<bar>r!
-
-nnoremap <leader>qq :copen<CR>
-nnoremap <leader>qc :cclose<CR>
 
 nnoremap <leader>ge :Gedit<space>
 nnoremap <leader>gs :Gstatus<CR>
