@@ -141,6 +141,7 @@ nnoremap gF :vertical wincmd f<CR>
 nnoremap gV `[V`]
 vmap <C-k> [egv
 vmap <C-j> ]egv
+vmap s S
 
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
