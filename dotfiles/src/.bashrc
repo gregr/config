@@ -128,6 +128,7 @@ extract() {
 findn() { FNAME="$1"; shift; find-vcs . -name "$FNAME" -print "$@"; }
 findwn() { FNAME="$1"; shift; find-vcs . -wholename "$FNAME" -print "$@"; }
 field() { prog='{ print $'"$1"' }'; awk "$prog"; }
+line() { head -n $(($1 + 1)) | tail -1; }
 git-files() {
   git $2 $3 --name-status --pretty=oneline |
   if [ "$1" -eq 0 ]; then cat; else sed 1d; fi | grep -E -v '^D' | field 2 |
