@@ -2,6 +2,7 @@ ant
 chromium-browser
 chromium-codecs-ffmpeg-extra
 clojure
+corkscrew
 darcs
 default-jdk
 dosbox
