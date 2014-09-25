@@ -1,3 +1,4 @@
+colout
 flake8
 ipython[notebook]
 jinja2
