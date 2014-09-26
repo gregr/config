@@ -149,7 +149,8 @@ alias lcr="find . -type f -exec wc -l {} \; | summ"
 racki() { racket -ie '(enter! "'$1'")'; }
 alias racket-tags="ctags --langmap=scheme:.rkt -R ."
 
-pretty-json() { python -mjson.tool | colout -t json | less -RXF; }
+lesscolor() { less -RXF; }
+pretty-json() { python -mjson.tool | colout -t json | lesscolor; }
 
 PACKDIR='~/config/pack'
 PACKMANAGE="$PACKDIR/manage.py"
