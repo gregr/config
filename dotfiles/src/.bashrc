@@ -127,7 +127,7 @@ extract() {
 
 findn() { FNAME="$1"; shift; find-vcs . -name "$FNAME" -print "$@"; }
 findwn() { FNAME="$1"; shift; find-vcs . -wholename "$FNAME" -print "$@"; }
-field() { prog='{ print $'"$1"' }'; awk "$prog"; }
+field() { awk '{ print $'"$1"' }'; }
 line() { head -n $(($1 + 1)) | tail -1; }
 git-files() {
   git $2 $3 --name-status --pretty=oneline |
