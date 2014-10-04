@@ -125,8 +125,8 @@ extract() {
   fi
 }
 
-findn() { FNAME="$1"; shift; find-vcs . -name "$FNAME" -print "$@"; }
-findwn() { FNAME="$1"; shift; find-vcs . -wholename "$FNAME" -print "$@"; }
+findn() { local FNAME="$1"; shift; find-vcs . -name "$FNAME" -print "$@"; }
+findwn() { local FNAME="$1"; shift; find-vcs . -wholename "$FNAME" -print "$@"; }
 field() { awk '{ print $'"$1"' }'; }
 line() { head -n $(($1 + 1)) | tail -1; }
 git-files() {
