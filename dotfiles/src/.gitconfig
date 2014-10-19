@@ -20,6 +20,7 @@
 	l = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold red)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset'
 	la = log --all --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold red)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset'
 	lg = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold red)%d%Creset %s %Cgreen(%cd) %C(blue)<%an>%Creset'
+	lga = log --all --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold red)%d%Creset %s %Cgreen(%cd) %C(blue)<%an>%Creset'
 	lt = log --graph --oneline --decorate
 	lta = log --all --graph --oneline --decorate
 	rb = rebase
