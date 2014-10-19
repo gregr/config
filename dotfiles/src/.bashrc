@@ -58,7 +58,7 @@ BGW="\[\033[47m\]"
 PROMPT_COLOR=$Y
 if [ ${UID} -eq 0 ]; then PROMPT_COLOR=$R; fi # red for root
 export PROMPT_COMMAND='history -a; if [ $? -ne 0 ]; then CURSOR_PROMPT=`echo -e "\033[0;31m>\033[0m"`; else CURSOR_PROMPT=">"; fi;'
-export PS1="$W\t$N $W"'$(__git_ps1 "(%s) ")'"$N$PROMPT_COLOR\u@\H$N:$C\w$N\n"'$CURSOR_PROMPT '
+export PS1="$N\t$N $MR"'$(__git_ps1 "(%s) ")'"$N$PROMPT_COLOR\u@\H$N:$C\w$N\n"'$CURSOR_PROMPT '
 export IGNOREEOF=10
 export GREP_OPTIONS='--color=auto'
 export PAGER=`which less`
