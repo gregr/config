@@ -1,5 +1,6 @@
 .Xmodmap
 .bashrc
+.dircolors
 .emacs
 .ghci
 .gitconfig
