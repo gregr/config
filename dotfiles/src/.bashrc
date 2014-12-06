@@ -129,6 +129,9 @@ findn() { local FNAME="$1"; shift; find-vcs . -name "$FNAME" -print "$@"; }
 findwn() { local FNAME="$1"; shift; find-vcs . -wholename "$FNAME" -print "$@"; }
 field() { awk '{ print $'"$1"' }'; }
 line() { head -n $(($1 + 1)) | tail -1; }
+ltrim() { sed -e 's/^[[:space:]]*//'; }
+rtrim() { sed -e 's/[[:space:]]*$//'; }
+lrtrim() { ltrim | rtrim; }
 git-files() {
   git $2 $3 --name-status --pretty=oneline |
   if [ "$1" -eq 0 ]; then cat; else sed 1d; fi | grep -E -v '^D' | field 2 |
