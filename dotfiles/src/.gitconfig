@@ -7,6 +7,7 @@
 	interactive = auto
 	status = auto
 [alias]
+	aa = add --all
 	br = branch -v
 	bra = branch -va
 	chp = cherry-pick
