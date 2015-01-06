@@ -180,6 +180,9 @@ nnoremap <leader>rrt :BufScratchTab<bar>r!
 nnoremap <leader>rrv :BufScratchVSplit<bar>r!
 nnoremap <leader>rrs :BufScratchSplit<bar>r!
 
+nnoremap <leader>dd :windo diffthis<CR>
+nnoremap <leader>dq :windo diffoff<CR>
+
 nnoremap <leader>ge :Gedit<space>
 nnoremap <leader>gs :tabe %<CR>:Gstatus<CR>
 nnoremap <leader>gb :Gblame<CR>
