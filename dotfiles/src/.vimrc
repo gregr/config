@@ -181,7 +181,7 @@ nnoremap <leader>rrv :BufScratchVSplit<bar>r!
 nnoremap <leader>rrs :BufScratchSplit<bar>r!
 
 nnoremap <leader>ge :Gedit<space>
-nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gs :tabe %<CR>:Gstatus<CR>
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gl :Glog<space>-20<space>--<space>%<CR>
