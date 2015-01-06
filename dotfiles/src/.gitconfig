@@ -15,7 +15,9 @@
 	ci = commit
 	co = checkout
 	df = diff
+	dfs = diff --stat
 	dfc = diff --cached
+	dfcs = diff --cached --stat
 	dfn = diff --name-status
 	gr = grep --color -n
 	l = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold red)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset'
