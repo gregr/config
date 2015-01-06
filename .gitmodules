@@ -22,9 +22,6 @@
 [submodule "dotfiles/src/.vim/bundle/syntastic"]
 	path = dotfiles/src/.vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
-[submodule "dotfiles/src/.vim/bundle/AutoTag"]
-	path = dotfiles/src/.vim/bundle/AutoTag
-	url = https://github.com/vim-scripts/AutoTag.git
 [submodule "dotfiles/src/.vim/bundle/vim-surround"]
 	path = dotfiles/src/.vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
