@@ -21,11 +21,17 @@
 	dfn = diff --name-status
 	gr = grep --color -n
 	l = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold red)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset'
+	ls = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold red)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --stat
 	la = log --all --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold red)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset'
+	las = log --all --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold red)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --stat
 	lg = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold red)%d%Creset %s %Cgreen(%cd) %C(blue)<%an>%Creset'
+	lgs = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold red)%d%Creset %s %Cgreen(%cd) %C(blue)<%an>%Creset' --stat
 	lga = log --all --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold red)%d%Creset %s %Cgreen(%cd) %C(blue)<%an>%Creset'
+	lgas = log --all --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold red)%d%Creset %s %Cgreen(%cd) %C(blue)<%an>%Creset' --stat
 	lt = log --graph --oneline --decorate
+	lts = log --graph --oneline --decorate --stat
 	lta = log --all --graph --oneline --decorate
+	ltas = log --all --graph --oneline --decorate --stat
 	rb = rebase
 	rba = rebase --abort
 	rbc = rebase --continue
