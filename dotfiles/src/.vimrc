@@ -187,7 +187,8 @@ nnoremap <leader>ge :Gedit<space>
 nnoremap <leader>gs :tabe %<CR>:Gstatus<CR>
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gd :tabe %<CR>:Gdiff<CR>
-nnoremap <leader>gl :Glog<space>-20<space>--<space>%<CR>
+nnoremap <leader>gla :vs<CR>:Git! log --decorate --stat<CR>
+nnoremap <leader>glf :vs<CR>:Git! log --decorate --stat -- %<CR>
 
 nnoremap <leader>ggt :BufScratchTab<bar>r!git<space>grep<space>''<left>
 nnoremap <leader>ggv :BufScratchVSplit<bar>r!git<space>grep<space>''<left>
