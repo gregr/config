@@ -18,6 +18,7 @@ set list listchars=tab:>-,trail:-
 set ts=2 sts=2 sw=2 expandtab
 set completeopt=longest,menuone
 set showfulltag
+set nofoldenable
 
 syntax on
 filetype plugin indent on
