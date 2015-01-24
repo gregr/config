@@ -13,6 +13,7 @@
 .vim/bundle
 .vimrc
 bin/find-vcs
+bin/git-ctags
 bin/git-land
 bin/grep-files
 bin/grep-vcs
