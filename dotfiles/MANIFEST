@@ -3,6 +3,7 @@
 .dircolors
 .emacs
 .ghci
+.git_template
 .gitconfig
 .gitignore
 .inputrc

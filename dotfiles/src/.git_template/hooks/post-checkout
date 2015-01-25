@@ -1,0 +1,4 @@
+#!/bin/bash
+if [[ "$1" != "$2" ]]; then
+  git ctags >/dev/null 2>&1 &
+fi

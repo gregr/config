@@ -47,3 +47,5 @@
 	conflictstyle = diff3
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[init]
+	templatedir = ~/.git_template
