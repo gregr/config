@@ -61,3 +61,6 @@
 [submodule "dotfiles/src/.vim/bundle/vim-togglelist"]
 	path = dotfiles/src/.vim/bundle/vim-togglelist
 	url = git@github.com:milkypostman/vim-togglelist.git
+[submodule "dotfiles/src/.vim/bundle/paredit"]
+	path = dotfiles/src/.vim/bundle/paredit
+	url = git@github.com:vim-scripts/paredit.vim.git
