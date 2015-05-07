@@ -1,6 +1,6 @@
 #!/bin/bash
-
+set -eufo pipefail
 TARGET=${1:-'master'}
-SOURCE=`git rev-parse --abbrev-ref HEAD`
+SOURCE=$(git rev-parse --abbrev-ref HEAD)
 echo "landing '$SOURCE' onto '$TARGET'"
 git rebase "$SOURCE" "$TARGET" && git branch -d "$SOURCE"
