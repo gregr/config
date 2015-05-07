@@ -1,0 +1,15 @@
+#!/bin/bash
+set -eufo pipefail
+command="$1"
+rev_start=${2:-'origin/master'}
+rev_end=${3:-'master'}
+revs=$(git rev-list --reverse "$rev_start".."$rev_end")
+
+printf "executing: '%s' on %s..%s\n" "$command" "$rev_start" "$rev_end"
+for rev in $revs; do
+  git log --oneline --decorate --stat -1 "$rev"
+  git checkout --quiet "$rev"
+  printf "executing on %s\n" "$rev"
+  $command
+done
+git checkout --quiet "$rev_end"

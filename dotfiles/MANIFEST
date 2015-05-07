@@ -16,6 +16,7 @@
 bin/find-vcs
 bin/git-ctags
 bin/git-land
+bin/git-rev-exec
 bin/grep-files
 bin/grep-vcs
 git-completion.bash
