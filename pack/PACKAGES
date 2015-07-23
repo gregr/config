@@ -15,6 +15,7 @@ erlang
 feh
 haskell-platform-prof
 icedtea-7-plugin
+iotop
 irssi
 irssi-scripts
 libav-tools
@@ -25,6 +26,7 @@ libopenblas-dev
 libsdl-image1.2-dev
 libsdl-ttf2.0-dev
 libsdl1.2-dev
+libtiff-tools
 libvirt-bin
 links
 links2
