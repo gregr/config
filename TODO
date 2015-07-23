@@ -1,0 +1,24 @@
+revise ubuntu packages to support lightweight VM setup
+  group by function
+  describe roles as sets of these groups
+
+standard configs (can these be easily done via ansible?)
+  visudo file
+    editor=/usr/bin/nano, !env_editor
+    env_reset
+    secure_path
+      {/usr/local/,/usr/,/}{sbin,bin}
+    requiretty
+  disable root login
+    sudo passwd -l root
+    /etc/ssh/sshd_config
+      no root login
+      rsaauth, pubkeyauth
+      no empty passwords
+      eventually, no passwords and no challengeresponse
+      create and chmod .ssh, authorized_keys
+
+osx-related
+  add /usr/local/* to PATH?
+  install packages
+    colout as a pip package
