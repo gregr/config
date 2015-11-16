@@ -1,7 +1,10 @@
-colout
+cabal-install
+Caskroom/cask/iterm2
+Caskroom/cask/java
+Caskroom/cask/swi-prolog
 coq
 erlang
-haskell-platform
+ghc
 leiningen
 markdown
 node
@@ -11,4 +14,3 @@ s3cmd
 sbt
 scala
 spidermonkey
-swi-prolog
