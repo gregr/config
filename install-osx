@@ -14,7 +14,7 @@
 
 here="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-"$here/pack/manage.py" --install
+"$here/dotfiles/manage.py" --install
 git submodule update --init
 
 cat > ~/.bash_profile << PROFILECONTENTS
@@ -26,10 +26,13 @@ if [ -f /usr/local/Library/Contributions/brew_bash_completion.sh ]; then
 fi
 PROFILECONTENTS
 
-sudo easy_install pip
-sudo pip install ansible
+brew install bash && sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells' && chsh -s /usr/local/bin/bash
+
+brew install python
+pip install --upgrade pip setuptools
+pip install ansible
 while read package; do
-  sudo pip install "$package"
+  pip install "$package"
 done < "$here/PIP-PACKAGES"
 
 brew update
