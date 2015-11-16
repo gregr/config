@@ -6,8 +6,6 @@
 # customize system preferences
 # install browsers and security extensions
 # set login photo
-# install racket
-# install xquartz
 # install homebrew; brew doctor
 # ssh-keygen -t rsa -b 4096 -C "user@hostname"
 # cd && git clone git@github.com:gregr/config.git && cd config && ./install-osx

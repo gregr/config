@@ -1,4 +1,5 @@
 cabal-install
+Caskroom/cask/flux
 Caskroom/cask/iterm2
 Caskroom/cask/java
 Caskroom/cask/swi-prolog
