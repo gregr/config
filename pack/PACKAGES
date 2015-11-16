@@ -35,7 +35,6 @@ mercurial
 netrik
 node-underscore
 nodejs
-npm
 ocaml
 octave3.2
 openjdk-7-jre
@@ -46,6 +45,7 @@ python-opengl
 python-pygame
 python3
 qemu-kvm
+r-base
 ruby1.9.3
 samba
 scala
