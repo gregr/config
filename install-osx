@@ -22,6 +22,9 @@ fi
 if [ -f /usr/local/Library/Contributions/brew_bash_completion.sh ]; then
   source /usr/local/Library/Contributions/brew_bash_completion.sh
 fi
+if [ -d "$HOME/bin" ]; then
+  PATH="$HOME/bin:$PATH"
+fi
 PROFILECONTENTS
 
 brew install bash && sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells' && chsh -s /usr/local/bin/bash
