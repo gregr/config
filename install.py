@@ -11,6 +11,7 @@ cabal_packages = os.path.join(config_path, 'CABAL-PACKAGES')
 pip_packages = os.path.join(config_path, 'PIP-PACKAGES')
 primary_packages = os.path.join(config_path, 'pack/PRIMARY-PACKAGES')
 secondary_packages = os.path.join(config_path, 'pack/SECONDARY-PACKAGES')
+tertiary_packages = os.path.join(config_path, 'pack/TERTIARY-PACKAGES')
 extra_packages = os.path.join(config_path, 'pack/PACKAGES')
 
 def parse(argv):
@@ -43,6 +44,7 @@ class Runner(object):
     self.call(['git', 'submodule', 'update', '--init'])
     if self.opts.basic:
       self.pack_install(secondary_packages)
+      self.pack_install(tertiary_packages)
       def call_each(ppath, cmd):
         for line in open(ppath):
           package = line.strip()

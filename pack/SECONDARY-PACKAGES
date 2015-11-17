@@ -1,11 +1,5 @@
 dos2unix
 exuberant-ctags
-g++
-gcc
-gprolog
-haskell-platform
-haskell-platform-doc
-hlint
 htop
 iftop
 iotop
@@ -13,7 +7,7 @@ inotify-tools
 markdown
 mtr
 nethogs
-pypy
+p7zip-full
 python-pip
 traceroute
 tree
