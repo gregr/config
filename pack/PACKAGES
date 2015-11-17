@@ -15,7 +15,6 @@ erlang
 feh
 haskell-platform-prof
 icedtea-7-plugin
-iotop
 irssi
 irssi-scripts
 libav-tools
@@ -60,4 +59,5 @@ virt-manager
 virt-viewer
 virtinst
 vlc
+xsel
 yesod
