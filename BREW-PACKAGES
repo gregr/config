@@ -1,4 +1,3 @@
-cabal-install
 Caskroom/cask/flux
 Caskroom/cask/iterm2
 Caskroom/cask/java
@@ -7,7 +6,7 @@ Caskroom/cask/vagrant
 Caskroom/cask/virtualbox
 coq
 erlang
-ghc
+haskell-stack
 leiningen
 markdown
 node

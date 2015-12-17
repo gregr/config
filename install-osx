@@ -43,8 +43,3 @@ done < "$here/BREW-PRIMARY-PACKAGES"
 while read package; do
   brew install "$package"
 done < "$here/BREW-PACKAGES"
-
-cabal update
-while read package; do
-  cabal install "$package"
-done < "$here/CABAL-PACKAGES"
