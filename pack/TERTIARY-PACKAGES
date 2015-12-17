@@ -9,8 +9,6 @@ erlang
 g++
 gcc
 gprolog
-haskell-platform
-haskell-platform-doc
 hlint
 leiningen
 libboost-dev
