@@ -3,6 +3,9 @@ runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
+set background=dark
+colorscheme solarized
+
 set fileformats=unix,dos,mac
 set backspace=indent,eol,start
 set scrolloff=10
