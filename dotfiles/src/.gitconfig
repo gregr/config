@@ -11,6 +11,8 @@
 	br = branch -v
 	bra = branch -va
 	chp = cherry-pick
+	chpa = cherry-pick --abort
+	chpc = cherry-pick --continue
 	ca = commit --amend
 	ci = commit
 	co = checkout
