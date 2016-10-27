@@ -67,3 +67,4 @@
 [submodule "dotfiles/src/.vim/bundle/elm.vim"]
 	path = dotfiles/src/.vim/bundle/elm.vim
 	url = git@github.com:lambdatoast/elm.vim.git
+	ignore = dirty
