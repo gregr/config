@@ -8,6 +8,8 @@
 	status = auto
 [alias]
 	aa = add --all
+	an = add -N
+	ap = add -p
 	br = branch -v
 	bra = branch -va
 	chp = cherry-pick
@@ -21,6 +23,7 @@
 	dfc = diff --cached
 	dfcs = diff --cached --stat
 	dfn = diff --name-status
+	fa = fetch --all --prune
 	gr = grep --color -n
 	l = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold red)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset'
 	ls = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold red)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --stat
@@ -43,6 +46,7 @@
 	st = status
 	subup = submodule update --init --recursive
 	land = !git-land
+	wip = reset HEAD^
 [core]
 	excludesfile = ~/.gitignore
 [merge]
