@@ -37,6 +37,7 @@
 	lts = log --graph --oneline --decorate --stat
 	lta = log --all --graph --oneline --decorate
 	ltas = log --all --graph --oneline --decorate --stat
+	please = push --force-with-lease
 	rb = rebase
 	rba = rebase --abort
 	rbc = rebase --continue
