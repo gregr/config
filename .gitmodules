@@ -64,3 +64,6 @@
 [submodule "dotfiles/src/.vim/bundle/paredit"]
 	path = dotfiles/src/.vim/bundle/paredit
 	url = git@github.com:vim-scripts/paredit.vim.git
+[submodule "dotfiles/src/.vim/bundle/elm.vim"]
+	path = dotfiles/src/.vim/bundle/elm.vim
+	url = git@github.com:lambdatoast/elm.vim.git
