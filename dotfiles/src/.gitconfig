@@ -47,7 +47,8 @@
 	st = status
 	subup = submodule update --init --recursive
 	land = !git-land
-	wip = reset HEAD^
+	unwip = reset HEAD^
+	wip = commit -a -m WIP
 [core]
 	excludesfile = ~/.gitignore
 [merge]
