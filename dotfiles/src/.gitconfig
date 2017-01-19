@@ -43,6 +43,7 @@
 	rbc = rebase --continue
 	rbi = rebase -i
 	sh = show
+	shs = show --stat
 	shn = show --name-status
 	st = status
 	subup = submodule update --init --recursive
