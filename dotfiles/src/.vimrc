@@ -68,6 +68,7 @@ augroup AutoFileType
   autocmd FileType scheme setl lispwords+=match,match*,match-let,match-let*,match-letrec,match-lambda,match-lambda*,match-lambda**,define/match
   autocmd FileType scheme setl lispwords+=define-type,define:,define-struct:,let:,let*:,letrec:,lambda:
   autocmd FileType scheme setl lispwords+=test,fresh,conde,run,run*,project
+  autocmd FileType scheme setl lispwords+=let*/and,let/if,let/list,let*/state,let/vars
   autocmd BufRead,BufNewFile SConstruct set filetype=python
   autocmd BufReadPost fugitive://* set bufhidden=delete
   autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
