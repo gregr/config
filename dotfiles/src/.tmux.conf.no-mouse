@@ -96,9 +96,9 @@ setw -g mode-keys vi
 setw -g automatic-rename on
 setw -g aggressive-resize on
 
-#setw -g utf8 on
-set -g mouse on
-#set -g mouse-utf8 off
+setw -g utf8 on
+set -g mouse off
+set -g mouse-utf8 off
 bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'copy-mode -e; send-keys -M'"
 bind -n WheelDownPane select-pane -t= \; send-keys -M
 bind -T root MouseDown1Status select-window -t=

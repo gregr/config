@@ -12,6 +12,7 @@
 	ap = add -p
 	br = branch -v
 	bra = branch -va
+	brr = branch -vr
 	chp = cherry-pick
 	chpa = cherry-pick --abort
 	chpc = cherry-pick --continue
@@ -25,6 +26,9 @@
 	dfn = diff --name-status
 	fa = fetch --all --prune
 	gr = grep --color -n
+	logs = log --stat
+	slog = log -S
+	slogs = log -S --stat
 	l = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold red)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset'
 	ls = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold red)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --stat
 	la = log --all --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold red)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset'

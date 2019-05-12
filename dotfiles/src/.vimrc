@@ -5,6 +5,7 @@ call pathogen#helptags()
 
 set background=dark
 colorscheme solarized
+"colorscheme morning
 
 set fileformats=unix,dos,mac
 set backspace=indent,eol,start
@@ -67,11 +68,12 @@ augroup END
 augroup AutoFileType
   autocmd!
   autocmd BufRead,BufNewFile *.rkt set filetype=scheme
-  autocmd FileType scheme setl lispwords+=syntax-rules,syntax-case,define-values,define-struct,define-syntax-parameter,let-values,let*-values
+  autocmd FileType scheme setl lispwords+=if,syntax-rules,syntax-case,define-values,define-struct,define-syntax-parameter,let-values,let*-values
   autocmd FileType scheme setl lispwords+=match,match*,match-let,match-let*,match-letrec,match-lambda,match-lambda*,match-lambda**,define/match
   autocmd FileType scheme setl lispwords+=define-type,define:,define-struct:,let:,let*:,letrec:,lambda:
-  autocmd FileType scheme setl lispwords+=test,fresh,conde,run,run*,project
-  autocmd FileType scheme setl lispwords+=let*/and,let/if,let/list,let*/state,let/vars
+  autocmd FileType scheme setl lispwords+=test,define-relation,fresh,run,run*,project,fresh/p
+  autocmd FileType scheme setl lispwords+=let*/and,let/if,let/list,let*/state,let/vars,define-vector-type,define-vector-type*
+  autocmd FileType scheme setl lispwords+=case/goal,case/stream
   autocmd BufRead,BufNewFile SConstruct set filetype=python
   autocmd BufReadPost fugitive://* set bufhidden=delete
   autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
@@ -116,7 +118,7 @@ let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 let g:syntastic_check_on_open = 0
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list = 0
 let g:syntastic_python_checker_args = '--ignore=E111,E121,E123,E125,E301,E302,E401,E701,E702,W191'
 
 let NERDTreeShowHidden=1

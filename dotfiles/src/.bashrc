@@ -85,8 +85,9 @@ alias tat='tmux attach'
 
 mountv() { { echo "DEVICE PATH TYPE FLAGS" && mount | awk '$2=$4=""; {print}'; } | column -t; }
 google() { links http://google.com/search?q=$(echo "$@" | sed s/\ /+/g); }
-bz2() { tar cvpjf "$1".tar.bz2 "$1"; }
-gz() { tar cvpzf "$1".tar.gz "$1"; }
+bz2dir() { dir=${1%/}; tar cvpjf "$dir".tar.bz2 "$dir"; }
+gzdir() { dir=${1%/}; tar cvpzf "$dir".tar.gz "$dir"; }
+tardir() { dir=${1%/}; tar cvpf "$dir".tar "$dir"; }
 exto() {
   if [ -f "$2" ]; then
     if [ -f "$1" ]; then
