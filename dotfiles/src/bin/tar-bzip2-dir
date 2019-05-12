@@ -1,0 +1,4 @@
+#!/bin/bash
+set -eufo pipefail
+dir=${1%/}
+tar cpvjf  "$dir.tar.bz2" "$dir"
