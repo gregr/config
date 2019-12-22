@@ -1,5 +1,3 @@
-;; The following line loads `xrepl' support
-(require xrepl)
 (require racket/pretty)
 (print-as-expression #f)
 (pretty-print-abbreviate-read-macros #f)
