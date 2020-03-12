@@ -88,6 +88,8 @@ augroup AutoRainbowParentheses
   autocmd Syntax * RainbowParenthesesLoadBraces
 augroup END
 
+let g:paredit_mode = 0
+
 let g:rbpt_colorpairs = [
     \ ['brown',       'RoyalBlue3'],
     \ ['Darkblue',    'SeaGreen3'],
