@@ -142,6 +142,8 @@ extract() {
   else echo "'$1' is not a valid file"
   fi
 }
+tunnel() { ssh -L "$1:127.0.0.1:$1" -C -N "${@:2}"; }
+tunnelvnc() { tunnel 5901 "$@"; }
 
 findn() { local FNAME="$1"; shift; find-vcs . -name "$FNAME" -print "$@"; }
 findwn() { local FNAME="$1"; shift; find-vcs . -wholename "$FNAME" -print "$@"; }
