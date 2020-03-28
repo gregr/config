@@ -70,7 +70,8 @@ augroup AutoFileType
   autocmd BufRead,BufNewFile *.rkt set filetype=scheme
   autocmd FileType scheme setl lispwords+=if,syntax-rules,syntax-case,define-values,define-struct,define-syntax-parameter,let-values,let*-values
   autocmd FileType scheme setl lispwords+=match,match*,match-let,match-let*,match-letrec,match-lambda,match-lambda*,match-lambda**,define/match
-  autocmd FileType scheme setl lispwords+=match-define,define-syntax-rule,module,module+
+  autocmd FileType scheme setl lispwords+=match-define,define-syntax-rule,module,module+,module*,parameterize
+  autocmd FileType scheme setl lispwords+=for,for/fold,for/list,for/vector,for/set
   autocmd FileType scheme setl lispwords+=define-type,define:,define-struct:,let:,let*:,letrec:,lambda:
   autocmd FileType scheme setl lispwords+=test,define-relation,fresh,run,run*,project,fresh/p
   autocmd FileType scheme setl lispwords+=let*/and,let/if,let/list,let*/state,let/vars,define-vector-type,define-vector-type*
