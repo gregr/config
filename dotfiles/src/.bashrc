@@ -101,7 +101,8 @@ alias tat='tmux attach'
 
 mountv() { { echo "DEVICE PATH TYPE FLAGS" && mount | awk '$2=$4=""; {print}'; } | column -t; }
 google() { links http://google.com/search?q=$(echo "$@" | sed s/\ /+/g); }
-download() { wget -mpEk "$1"; }
+mirror() { wget -mpEk "$1"; }  # m: mirror; p: images, css, etc.; E: extensions; k: fix links
+download() { wget -rl "$1" "$2"; }
 bz2dir() { dir=${1%/}; tar cvpjf "$dir".tar.bz2 "$dir"; }
 gzdir() { dir=${1%/}; tar cvpzf "$dir".tar.gz "$dir"; }
 tardir() { dir=${1%/}; tar cvpf "$dir".tar "$dir"; }
