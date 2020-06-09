@@ -98,10 +98,10 @@ alias rcopy='rsync -az --stats --partial --progress'
 alias rbackup='rsync -az --stats --partial --progress --delete --itemize-changes'
 alias g='git'
 alias tat='tmux attach'
+alias mirror='wget -mpEk --no-parent'  # m: mirror; p: images, css, etc.; E: extensions; k: fix links
 
 mountv() { { echo "DEVICE PATH TYPE FLAGS" && mount | awk '$2=$4=""; {print}'; } | column -t; }
 google() { links http://google.com/search?q=$(echo "$@" | sed s/\ /+/g); }
-mirror() { wget -mpEk "$1"; }  # m: mirror; p: images, css, etc.; E: extensions; k: fix links
 download() { wget -rl "$1" "$2"; }
 bz2dir() { dir=${1%/}; tar cvpjf "$dir".tar.bz2 "$dir"; }
 gzdir() { dir=${1%/}; tar cvpzf "$dir".tar.gz "$dir"; }
