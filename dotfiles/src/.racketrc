@@ -1,3 +1,11 @@
 (require racket/pretty)
 (print-as-expression #f)
 (pretty-print-abbreviate-read-macros #f)
+(define-syntax l_
+  (syntax-rules ()
+    ((_ e* ...) (l_-helper () () e* ...))))
+(define-syntax l_-helper
+  (syntax-rules (_)
+    ((_ (params ...) (body ...))          (lambda    (params ...)   (body ...)))
+    ((_ (params ...) (body ...) _ e* ...) (l_-helper (params ... x) (body ... x) e* ...))
+    ((_ (params ...) (body ...) e e* ...) (l_-helper (params ...)   (body ... e) e* ...))))
