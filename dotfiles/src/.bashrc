@@ -101,6 +101,7 @@ alias rbackup='rsync -az --stats --partial --progress --delete --itemize-changes
 alias g='git'
 alias tat='tmux attach'
 alias mirror='wget -mpEk --no-parent'  # m: mirror; p: images, css, etc.; E: extensions; k: fix links
+alias mirrorc='mirror --no-check-certificate'
 
 mountv() { { echo "DEVICE PATH TYPE FLAGS" && mount | awk '$2=$4=""; {print}'; } | column -t; }
 google() { links http://google.com/search?q=$(echo "$@" | sed s/\ /+/g); }
@@ -172,7 +173,10 @@ vsession() { vim -S "$HOME/.vim/sessions/$1.vim"; }
 summ() { awk '{for (i = 1; i <= NF; ++i) total+=$i;} END{print total}'; }
 alias lcr="find . -type f -exec wc -l {} \; | summ"
 
+split10g() { split -b 10000m "$1" "$1.split."; }
+
 racki() { racket -ie '(enter! "'$1'")'; }
+racke() { racket -l errortrace -u "$1"; }
 alias racket-tags="ctags --langmap=scheme:.rkt -R ."
 
 lesscolor() { less -RXF; }
