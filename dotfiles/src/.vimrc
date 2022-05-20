@@ -95,6 +95,8 @@ augroup AutoRainbowParentheses
   autocmd Syntax * RainbowParenthesesLoadBraces
 augroup END
 
+let $BASH_ENV = "~/.vim-bash-env"
+
 let g:paredit_mode = 0
 
 let g:rbpt_colorpairs = [
