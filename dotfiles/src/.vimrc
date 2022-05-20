@@ -23,6 +23,8 @@ set ts=2 sts=2 sw=2 expandtab
 set completeopt=longest,menuone
 set showfulltag
 set nofoldenable
+set timeoutlen=1000 ttimeoutlen=0
+set termwinscroll=1000000
 
 syntax on
 filetype plugin indent on
@@ -97,8 +99,6 @@ augroup END
 
 let $BASH_ENV = "~/.vim-bash-env"
 
-let g:paredit_mode = 0
-
 let g:rbpt_colorpairs = [
     \ ['brown',       'RoyalBlue3'],
     \ ['Darkblue',    'SeaGreen3'],
@@ -117,7 +117,6 @@ let g:rbpt_colorpairs = [
 
 let mapleader = ","
 
-let g:CoqIDEDefaultMap = 1
 let g:tagbar_compact = 1
 let g:tagbar_indent = 1
 let g:tagbar_autoclose = 1
@@ -129,14 +128,9 @@ let g:ctrlp_map = '<leader>ff'
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
-let g:syntastic_check_on_open = 0
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_python_checker_args = '--ignore=E111,E121,E123,E125,E301,E302,E401,E701,E702,W191'
-
 let NERDTreeShowHidden=1
 
-let ConqueTerm_EscKey = '<C-c>'
-let ConqueTerm_SendVisKey = '<leader>bp'
+tnoremap <C-w>n <C-w>N
 
 noremap ; :
 nnoremap Y y$
@@ -175,47 +169,40 @@ nnoremap <leader>qq :call ToggleQuickfixList()<CR>
 
 nnoremap <leader>tt :TagbarToggle<CR>
 
+vnoremap <leader>ts :Tabularize<CR>
 vnoremap <leader>ta :Tabularize/=
 vnoremap <leader>tz :Tabularize/:\zs<left><left><left>
 
 nnoremap > :tabnext<CR>
 nnoremap < :tabprev<CR>
 
+nnoremap <leader>nn :NERDTreeToggle<CR>
 nnoremap <C-p> :bprev<CR>
 nnoremap <C-n> :bnext<CR>
 nnoremap <leader>bb :ls<CR>:buffer<space>
-nnoremap <leader>bst :BufScratchTab<CR>
-nnoremap <leader>bsv :BufScratchVSplit<CR>
-nnoremap <leader>bss :BufScratchSplit<CR>
+nnoremap <leader>bs :BufScratchVSplit<CR>
 nnoremap <leader>bd :bd<CR>
 nnoremap <leader>bc :bp<bar>sp<bar>bn<bar>bd<CR>
-nnoremap <leader>bt :ConqueTermV<space>bash<CR>
-nnoremap <leader>nn :NERDTreeToggle<CR>
+nnoremap <leader>bt :vertical :term<space>
+"paste into the terminal buffer contained in the window to our left
+nnoremap <leader>bp <C-w>h<C-w>""<CR><C-w>l
+vmap <leader>bp y<leader>bp
 
-"let g:conque_repl_send_key = '<leader>rr'
-"nmap <leader>ra ,btracket
-
-nnoremap <leader>rrr :r!
-nnoremap <leader>rrt :BufScratchTab<bar>r!
-nnoremap <leader>rrv :BufScratchVSplit<bar>r!
-nnoremap <leader>rrs :BufScratchSplit<bar>r!
+nnoremap <leader>R :r!
+nnoremap <leader>rr :r!
 
 nnoremap <leader>dd :windo diffthis<CR>
 nnoremap <leader>dq :windo diffoff<CR>
 
 nnoremap <leader>ge :Gedit<space>
-nnoremap <leader>gs :tabe %<CR>:Gstatus<CR>
+nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gd :tabe %<CR>:Gdiff<CR>
 nnoremap <leader>gla :vs<CR>:Git! log --decorate --stat<CR>
 nnoremap <leader>glf :vs<CR>:Glog -- %<CR>
 
-nnoremap <leader>ggt :BufScratchTab<bar>r!git<space>grep<space>''<left>
-nnoremap <leader>ggv :BufScratchVSplit<bar>r!git<space>grep<space>''<left>
-nnoremap <leader>ggs :BufScratchSplit<bar>r!git<space>grep<space>''<left>
-nnoremap <leader>gGt :BufScratchTab<bar>r!grep-vcs<space>-r<space>.<space>-e<space>''<left>
-nnoremap <leader>gGv :BufScratchVSplit<bar>r!grep-vcs<space>-r<space>.<space>-e<space>''<left>
-nnoremap <leader>gGs :BufScratchSplit<bar>r!grep-vcs<space>-r<space>.<space>-e<space>''<left>
+nnoremap <leader>gg :BufScratchVSplit<bar>r!git<space>grep<space>''<left>
+nnoremap <leader>gG :BufScratchVSplit<bar>r!grep-vcs<space>-r<space>.<space>-e<space>''<left>
 nnoremap <leader>fF :BufScratchTab<bar>r!find-vcs<space>.<space>-name<space>''<space>-print<left><left><left><left><left><left><left><left>
 
 cnoremap %% <C-R>=expand("%:p:h")."/"<CR>
@@ -232,6 +219,3 @@ nnoremap <leader>sd :DeleteSession<CR>
 nnoremap <leader>sts :SaveTabSession <left><right>
 nnoremap <leader>sto :AppendTabSession<CR>
 nnoremap <leader>stc :CloseTabSession<CR>
-
-nnoremap <leader>coc :CoffeeCompile<CR>
-nnoremap <leader>com :CoffeeMake<CR>
