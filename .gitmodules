@@ -19,30 +19,18 @@
 [submodule "dotfiles/src/.vim/bundle/ctrlp.vim"]
 	path = dotfiles/src/.vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
-[submodule "dotfiles/src/.vim/bundle/syntastic"]
-	path = dotfiles/src/.vim/bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
 [submodule "dotfiles/src/.vim/bundle/vim-surround"]
 	path = dotfiles/src/.vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
 [submodule "dotfiles/src/.vim/bundle/vim-repeat"]
 	path = dotfiles/src/.vim/bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
-[submodule "dotfiles/src/.vim/bundle/vim-afterimage"]
-	path = dotfiles/src/.vim/bundle/vim-afterimage
-	url = https://github.com/tpope/vim-afterimage.git
-[submodule "dotfiles/src/.vim/bundle/vim-coffee-script"]
-	path = dotfiles/src/.vim/bundle/vim-coffee-script
-	url = https://github.com/kchmck/vim-coffee-script
 [submodule "dotfiles/src/.vim/bundle/nerdtree"]
 	path = dotfiles/src/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "dotfiles/src/.vim/bundle/vim-visual-star-search"]
 	path = dotfiles/src/.vim/bundle/vim-visual-star-search
 	url = https://github.com/nelstrom/vim-visual-star-search.git
-[submodule "dotfiles/src/.vim/bundle/vim-conque-repl.git"]
-	path = dotfiles/src/.vim/bundle/vim-conque-repl.git
-	url = https://github.com/gregr/vim-conque-repl.git
 [submodule "dotfiles/src/.vim/bundle/vim-misc"]
 	path = dotfiles/src/.vim/bundle/vim-misc
 	url = https://github.com/xolox/vim-misc.git
@@ -52,19 +40,6 @@
 [submodule "dotfiles/src/.vim/bundle/rainbow_parentheses"]
 	path = dotfiles/src/.vim/bundle/rainbow_parentheses
 	url = https://github.com/kien/rainbow_parentheses.vim
-[submodule "dotfiles/src/.vim/bundle/coq"]
-	path = dotfiles/src/.vim/bundle/coq
-	url = https://github.com/jvoorhis/coq.vim.git
-[submodule "dotfiles/src/.vim/bundle/vim-conque"]
-	path = dotfiles/src/.vim/bundle/vim-conque
-	url = https://github.com/basepi/vim-conque.git
 [submodule "dotfiles/src/.vim/bundle/vim-togglelist"]
 	path = dotfiles/src/.vim/bundle/vim-togglelist
 	url = git@github.com:milkypostman/vim-togglelist.git
-[submodule "dotfiles/src/.vim/bundle/paredit"]
-	path = dotfiles/src/.vim/bundle/paredit
-	url = git@github.com:vim-scripts/paredit.vim.git
-[submodule "dotfiles/src/.vim/bundle/elm.vim"]
-	path = dotfiles/src/.vim/bundle/elm.vim
-	url = git@github.com:lambdatoast/elm.vim.git
-	ignore = dirty
