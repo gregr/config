@@ -71,8 +71,12 @@ augroup AutoFileType
   autocmd!
   autocmd BufRead,BufNewFile *.rkt set filetype=scheme
   autocmd BufRead,BufNewFile *.dbk set filetype=scheme
-  autocmd FileType scheme setl lispwords+=if,syntax-rules,syntax-case,syntax-parse,define-values,define-struct,define-syntax-parameter,let-values,let*-values
-  autocmd FileType scheme setl lispwords+=with-syntax,with-syntax*,define-match-expander,with-handlers
+  autocmd FileType scheme setl lispwords-=if
+  autocmd FileType scheme setl lispwords+=syntax-rules,syntax-case,syntax-parse,define-values,define-struct,define-syntax-parameter,let-values,let*-values
+  autocmd FileType scheme setl lispwords+=with-syntax,with-syntax*,define-match-expander,with-handlers,declare-parser,syntax-dismantle
+  autocmd FileType scheme setl lispwords+=local,splicing-local,splicing-letrec-syntax,splicing-let-syntax,
+  autocmd FileType scheme setl lispwords+=splicing-letrec*,splicing-letrec,splicing-let,splicing-let*
+  autocmd FileType scheme setl lispwords+=splicing-letrec*-values,splicing-letrec-values,splicing-let-values,splicing-let*-values
   autocmd FileType scheme setl lispwords+=match,match*,match-let,match-let*,match-letrec,match-lambda,match-lambda*,match-lambda**,define/match
   autocmd FileType scheme setl lispwords+=match-define,define-syntax-rule,module,module+,module*,parameterize,syntax-parameterize
   autocmd FileType scheme setl lispwords+=for,for/fold,for/list,for/vector,for/set
@@ -187,6 +191,9 @@ nnoremap <leader>bt :vertical :term<space>
 "paste into the terminal buffer contained in the window to our left
 nnoremap <leader>bp <C-w>h<C-w>""<CR><C-w>l
 vmap <leader>bp y<leader>bp
+"paste the last result from the terminal buffer repl contained in the window to our left
+nnoremap <leader>br <C-w>h<C-w>Nk$v%ya<C-w>lo<C-c>p
+nnoremap <leader>bR <C-w>h<C-w>Nk$v0ya<C-w>lo<C-c>p
 
 nnoremap <leader>R :r!
 nnoremap <leader>rr :r!
