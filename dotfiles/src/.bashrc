@@ -12,6 +12,7 @@ umask 022
 shopt -s checkwinsize
 shopt -s histappend
 shopt -s globstar
+set -o noclobber
 HISTCONTROL=ignoredups:ignorespace
 HISTSIZE=1000000
 HISTFILESIZE=1000000
