@@ -198,6 +198,11 @@ nnoremap <leader>bR <C-w>h<C-w>Nk$v0ya<C-w>lo<C-c>p
 nnoremap <leader>R :r!
 nnoremap <leader>rr :r!
 
+nnoremap <leader>ww :!
+vnoremap <leader>ww :!
+nnoremap <leader>W :!bash<CR>
+vnoremap <leader>W :!bash<CR>
+
 nnoremap <leader>dd :windo diffthis<CR>
 nnoremap <leader>dq :windo diffoff<CR>
 
