@@ -25,6 +25,8 @@ alias g='git'
 alias tat='tmux attach'
 alias mirror='wget -mpEk --no-parent'  # m: mirror; p: images, css, etc.; E: extensions; k: fix links
 alias mirrorc='mirror --no-check-certificate'
+alias mirror1='wget -pEk'
+alias mirror1c='mirror1 --no-check-certificate'
 
 mountv() { { echo "DEVICE PATH TYPE FLAGS" && mount | awk '$2=$4=""; {print}'; } | column -t; }
 google() { links http://google.com/search?q=$(echo "$@" | sed s/\ /+/g); }
