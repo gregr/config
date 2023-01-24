@@ -196,11 +196,13 @@ vmap <leader>bp y<leader>bp
 nnoremap <leader>br <C-w>h<C-w>Nk$v%ya<C-w>lo<C-c>p
 nnoremap <leader>bR <C-w>h<C-w>Nk$v0ya<C-w>lo<C-c>p
 
+"insert stdout of command
 nnoremap <leader>R :r!
 nnoremap <leader>rr :r!
-
+"replace with stdout of passing line (or selected) as stdin to a command
 nnoremap <leader>ww :.!
 vnoremap <leader>ww :!
+"replace with stdout of passing line (or selected) as stdin to a new bash shell
 nnoremap <leader>W :.!bash<CR>
 vnoremap <leader>W :!bash<CR>
 
