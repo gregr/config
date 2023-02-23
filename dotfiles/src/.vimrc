@@ -137,6 +137,10 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let NERDTreeShowHidden=1
 
 tnoremap <C-w>n <C-w>N
+tnoremap <C-h> <C-w>h
+tnoremap <C-j> <C-w>j
+tnoremap <C-k> <C-w>k
+tnoremap <C-l> <C-w>l
 
 noremap ; :
 nnoremap Y y$
