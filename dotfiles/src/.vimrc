@@ -25,6 +25,7 @@ set showfulltag
 set nofoldenable
 set timeoutlen=1000 ttimeoutlen=0
 set termwinscroll=1000000
+set clipboard=unnamed
 
 syntax on
 filetype plugin indent on
