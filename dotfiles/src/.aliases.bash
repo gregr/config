@@ -74,6 +74,7 @@ extract() {
 tunnel() { ssh -L "$1:127.0.0.1:$1" -C -N "${@:2}"; }
 tunnelvnc() { tunnel 5901 "$@"; }
 
+decdump() { hexdump -e '"%012_ad  " 8/1 "%03d " " " 8/1 " %03d"' -e '"  |" 16/1 "%_p" "|\n"' "$@"; }
 findn() { local FNAME="$1"; shift; find-vcs . -name "$FNAME" -print "$@"; }
 findwn() { local FNAME="$1"; shift; find-vcs . -wholename "$FNAME" -print "$@"; }
 field() { awk '{ print $'"$1"' }'; }
