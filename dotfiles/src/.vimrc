@@ -167,6 +167,8 @@ vmap <C-k> [egv
 vmap <C-j> ]egv
 vmap s S
 
+vnoremap <leader><space> <C-v>I;<ESC>
+
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 cnoremap <C-b> <Left>
