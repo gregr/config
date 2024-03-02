@@ -85,7 +85,8 @@ augroup AutoFileType
   autocmd FileType scheme setl lispwords+=test,define-relation,fresh,run,run*,project,fresh/p,define-relation/table
   autocmd FileType scheme setl lispwords+=define-lifted-relation,fresh/level
   autocmd FileType scheme setl lispwords+=let*/and,let/if,let/list,let*/state,let/vars,define-vector-type,define-vector-type*,define-variant
-  autocmd FileType scheme setl lispwords+=caseq,casev
+  autocmd FileType scheme setl lispwords+=define-inline
+  autocmd FileType scheme setl lispwords+=case-values,case1
   autocmd FileType scheme setl lispwords+=case/goal,case/stream
   autocmd FileType scheme setl lispwords+=let/cps,let/files,simple-match,simple-match-lambda,parser-lambda
   autocmd FileType scheme setl lispwords+=let/seq,app/seq,let/return,case/p,case/byte,case/char,case/token,lambda/token,let/token
