@@ -43,7 +43,7 @@ bind-key           p previous-window
 bind-key           q display-panes
 bind-key           r refresh-client
 bind-key           t clock-mode
-bind-key           w choose-tree -Zw
+bind-key           w choose-tree -Zw -O name
 bind-key           x confirm-before -p "kill-pane #P? (y/n)" kill-pane
 bind-key           z resize-pane -Z
 bind-key           '~' show-messages
@@ -79,8 +79,8 @@ set -g visual-activity on
 setw -g monitor-activity on
 
 set -g status-style fg=white,bg=black
-set -g status-left '#[fg=green]#H#[fg=yellow][#{session_name}]'
-set -g status-right '#[fg=yellow]%d-%b-%y %H:%M#(uptime | rev | cut -d ',' -f1,2 | rev)'
+set -g status-left '#[fg=yellow][#{session_name}]'
+set -g status-right "#[fg=green]%d-%b-%y %H:%M users=#(uptime | rev | cut -d , -f2 | cut -d ' ' -f2 | rev)#(uptime | rev | cut -d : -f1 | rev)"
 set -g status-left-length 1000
 set -g status-right-length 1000
 
@@ -106,7 +106,7 @@ bind -n M-/ copy-mode \; send-keys ?
 bind -n M-? copy-mode \; send-keys /
 bind -n M-u copy-mode \; send-keys C-u
 
-bind -n M-s choose-tree -Zs
+bind -n M-s choose-tree -Zs -O name
 bind s command-prompt "new-session -ds '%1' ; switch-client -t '%1'"
 bind c new-window -c "#{pane_current_path}"
 bind '"' split-window -v -c "#{pane_current_path}"
