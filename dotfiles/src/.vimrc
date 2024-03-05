@@ -70,8 +70,27 @@ augroup END
 
 augroup AutoFileType
   autocmd!
-  autocmd BufRead,BufNewFile *.rkt set filetype=scheme
   autocmd BufRead,BufNewFile *.dbk set filetype=scheme
+  autocmd FileType racket setl lispwords-=if
+  autocmd FileType racket setl lispwords+=provide,require
+  autocmd FileType racket setl lispwords+=syntax-rules,syntax-case,syntax-parse,define-values,define-struct,define-syntax-parameter,let-values,let*-values
+  autocmd FileType racket setl lispwords+=with-syntax,with-syntax*,define-match-expander,with-handlers,declare-parser,syntax-dismantle
+  autocmd FileType racket setl lispwords+=local,splicing-local,splicing-letrec-syntax,splicing-let-syntax,
+  autocmd FileType racket setl lispwords+=splicing-letrec*,splicing-letrec,splicing-let,splicing-let*
+  autocmd FileType racket setl lispwords+=splicing-letrec*-values,splicing-letrec-values,splicing-let-values,splicing-let*-values
+  autocmd FileType racket setl lispwords+=match,match*,match-let,match-let*,match-letrec,match-lambda,match-lambda*,match-lambda**,define/match
+  autocmd FileType racket setl lispwords+=match-define,define-syntax-rule,module,module+,module*,parameterize,syntax-parameterize
+  autocmd FileType racket setl lispwords+=for,for/fold,for/list,for/vector,for/set
+  autocmd FileType racket setl lispwords+=define-type,define:,define-struct:,let:,let*:,letrec:,lambda:
+  autocmd FileType racket setl lispwords+=test,define-relation,fresh,run,run*,project,fresh/p,define-relation/table
+  autocmd FileType racket setl lispwords+=define-lifted-relation,fresh/level
+  autocmd FileType racket setl lispwords+=let*/and,let/if,let/list,let*/state,let/vars,define-vector-type,define-vector-type*,define-variant
+  autocmd FileType racket setl lispwords+=define-inline
+  autocmd FileType racket setl lispwords+=case-values,case1
+  autocmd FileType racket setl lispwords+=case/goal,case/stream
+  autocmd FileType racket setl lispwords+=let/cps,let/files,simple-match,simple-match-lambda,parser-lambda
+  autocmd FileType racket setl lispwords+=let/seq,app/seq,let/return,case/p,case/byte,case/char,case/token,lambda/token,let/token
+  autocmd FileType racket setl lispwords+=exist,all,<<=,<<+,<<-,<<~,<<+=,declare,dbk,define-dbk,section
   autocmd FileType scheme setl lispwords-=if
   autocmd FileType scheme setl lispwords+=syntax-rules,syntax-case,syntax-parse,define-values,define-struct,define-syntax-parameter,let-values,let*-values
   autocmd FileType scheme setl lispwords+=with-syntax,with-syntax*,define-match-expander,with-handlers,declare-parser,syntax-dismantle
@@ -94,6 +113,7 @@ augroup AutoFileType
   autocmd BufRead,BufNewFile SConstruct set filetype=python
   autocmd BufReadPost fugitive://* set bufhidden=delete
   autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
+  autocmd FileType markdown setlocal ts=2 sts=2 sw=2 expandtab
 augroup END
 
 augroup AutoRainbowParentheses
