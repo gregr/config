@@ -129,17 +129,25 @@ augroup END
 
 let $BASH_ENV = "~/.vim-bash-env"
 
-"For proper repeat, the length of this list should be a factor of 16.
+"For proper repeat, the length of this list should be a factor of 16.  Not a
+"big deal though.
 let g:rbpt_colorpairs = [
-     \ ['green',       'firebrick3'],
-     \ ['red',         'SeaGreen3'],
-     \ ['darkgreen',   'firebrick3'],
-     \ ['lightgray',   'DarkOrchid3'],
-     \ ['darkred',     'SeaGreen3'],
-     \ ['darkcyan',    'RoyalBlue3'],
-     \ ['brown',       'firebrick3'],
-     \ ['gray',        'SeaGreen3'],
-     \ ]
+    \ ['brown',       'RoyalBlue3'],
+    \ ['blue',        'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['blue',        'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
 
 let mapleader = ","
 
