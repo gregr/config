@@ -4,7 +4,8 @@ call pathogen#infect()
 call pathogen#helptags()
 
 set background=dark
-colorscheme solarized
+"colorscheme slate
+"colorscheme solarized
 "colorscheme morning
 
 set fileformats=unix,dos,mac
@@ -128,21 +129,17 @@ augroup END
 
 let $BASH_ENV = "~/.vim-bash-env"
 
+"For proper repeat, the length of this list should be a factor of 16.
 let g:rbpt_colorpairs = [
-    \ ['brown',       'RoyalBlue3'],
-    \ ['Darkblue',    'SeaGreen3'],
-    \ ['darkgreen',   'firebrick3'],
-    \ ['darkcyan',    'RoyalBlue3'],
-    \ ['darkred',     'SeaGreen3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['brown',       'firebrick3'],
-    \ ['gray',        'RoyalBlue3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['Darkblue',    'firebrick3'],
-    \ ['darkgreen',   'RoyalBlue3'],
-    \ ['darkcyan',    'SeaGreen3'],
-    \ ['darkred',     'DarkOrchid3'],
-    \ ]
+     \ ['green',       'firebrick3'],
+     \ ['red',         'SeaGreen3'],
+     \ ['darkgreen',   'firebrick3'],
+     \ ['lightgray',   'DarkOrchid3'],
+     \ ['darkred',     'SeaGreen3'],
+     \ ['darkcyan',    'RoyalBlue3'],
+     \ ['brown',       'firebrick3'],
+     \ ['gray',        'SeaGreen3'],
+     \ ]
 
 let mapleader = ","
 
