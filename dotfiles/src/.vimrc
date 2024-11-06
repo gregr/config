@@ -79,7 +79,7 @@ augroup AutoFileType
   autocmd FileType racket setl lispwords+=local,splicing-local,splicing-letrec-syntax,splicing-let-syntax
   autocmd FileType racket setl lispwords+=splicing-letrec*,splicing-letrec,splicing-let,splicing-let*
   autocmd FileType racket setl lispwords+=splicing-letrec*-values,splicing-letrec-values,splicing-let-values,splicing-let*-values
-  autocmd FileType racket setl lispwords+=mlet,mdefine
+  autocmd FileType racket setl lispwords+=mdefine,mlet,splicing-mlet
   autocmd FileType racket setl lispwords+=match,match*,match-let,match-let*,match-letrec,match-lambda,match-lambda*,match-lambda**,define/match
   autocmd FileType racket setl lispwords+=match-define,define-syntax-rule,module,module+,module*,parameterize,syntax-parameterize
   autocmd FileType racket setl lispwords+=for,for/fold,for/list,for/vector,for/set
@@ -99,7 +99,7 @@ augroup AutoFileType
   autocmd FileType scheme setl lispwords+=local,splicing-local,splicing-letrec-syntax,splicing-let-syntax
   autocmd FileType scheme setl lispwords+=splicing-letrec*,splicing-letrec,splicing-let,splicing-let*
   autocmd FileType scheme setl lispwords+=splicing-letrec*-values,splicing-letrec-values,splicing-let-values,splicing-let*-values
-  autocmd FileType scheme setl lispwords+=mlet,mdefine
+  autocmd FileType scheme setl lispwords+=mdefine,mlet,splicing-mlet
   autocmd FileType scheme setl lispwords+=match,match*,match-let,match-let*,match-letrec,match-lambda,match-lambda*,match-lambda**,define/match
   autocmd FileType scheme setl lispwords+=match-define,define-syntax-rule,module,module+,module*,parameterize,syntax-parameterize
   autocmd FileType scheme setl lispwords+=for,for/fold,for/list,for/vector,for/set
