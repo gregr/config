@@ -79,12 +79,13 @@ augroup AutoFileType
   autocmd FileType racket setl lispwords+=local,splicing-local,splicing-letrec-syntax,splicing-let-syntax
   autocmd FileType racket setl lispwords+=splicing-letrec*,splicing-letrec,splicing-let,splicing-let*
   autocmd FileType racket setl lispwords+=splicing-letrec*-values,splicing-letrec-values,splicing-let-values,splicing-let*-values
-  autocmd FileType racket setl lispwords+=mdefine,mlet,splicing-mlet,define-vocabulary-value,set-vocabulary-value!
+  autocmd FileType racket setl lispwords+=mdefine,mlet,splicing-mlet
+  autocmd FileType racket setl lispwords+=define-in-vocabulary,add-in-vocabulary,define-syntax-in-vocabulary,add-syntax-in-vocabulary
   autocmd FileType racket setl lispwords+=match,match*,match-let,match-let*,match-letrec,match-lambda,match-lambda*,match-lambda**,define/match
   autocmd FileType racket setl lispwords+=match-define,define-syntax-rule,module,module+,module*,parameterize,syntax-parameterize
   autocmd FileType racket setl lispwords+=for,for/fold,for/list,for/vector,for/set
   autocmd FileType racket setl lispwords+=define-type,define:,define-struct:,let:,let*:,letrec:,lambda:
-  autocmd FileType racket setl lispwords+=test,define-relation,fresh,run,run*,project,fresh/p,define-relation/table
+  autocmd FileType racket setl lispwords+=test,defrel,define-relation,fresh,run,run*,project,fresh/p,define-relation/table
   autocmd FileType racket setl lispwords+=define-lifted-relation,fresh/level
   autocmd FileType racket setl lispwords+=let*/and,let/if,let/list,let*/state,let/vars,define-vector-type,define-vector-type*,define-variant
   autocmd FileType racket setl lispwords+=define-inline
@@ -99,12 +100,13 @@ augroup AutoFileType
   autocmd FileType scheme setl lispwords+=local,splicing-local,splicing-letrec-syntax,splicing-let-syntax
   autocmd FileType scheme setl lispwords+=splicing-letrec*,splicing-letrec,splicing-let,splicing-let*
   autocmd FileType scheme setl lispwords+=splicing-letrec*-values,splicing-letrec-values,splicing-let-values,splicing-let*-values
-  autocmd FileType scheme setl lispwords+=mdefine,mlet,splicing-mlet,define-vocabulary-value,set-vocabulary-value!
+  autocmd FileType scheme setl lispwords+=mdefine,mlet,splicing-mlet
+  autocmd FileType scheme setl lispwords+=define-in-vocabulary,add-in-vocabulary,define-syntax-in-vocabulary,add-syntax-in-vocabulary
   autocmd FileType scheme setl lispwords+=match,match*,match-let,match-let*,match-letrec,match-lambda,match-lambda*,match-lambda**,define/match
   autocmd FileType scheme setl lispwords+=match-define,define-syntax-rule,module,module+,module*,parameterize,syntax-parameterize
   autocmd FileType scheme setl lispwords+=for,for/fold,for/list,for/vector,for/set
   autocmd FileType scheme setl lispwords+=define-type,define:,define-struct:,let:,let*:,letrec:,lambda:
-  autocmd FileType scheme setl lispwords+=test,define-relation,fresh,run,run*,project,fresh/p,define-relation/table
+  autocmd FileType scheme setl lispwords+=test,defrel,define-relation,fresh,run,run*,project,fresh/p,define-relation/table
   autocmd FileType scheme setl lispwords+=define-lifted-relation,fresh/level
   autocmd FileType scheme setl lispwords+=let*/and,let/if,let/list,let*/state,let/vars,define-vector-type,define-vector-type*,define-variant
   autocmd FileType scheme setl lispwords+=define-inline
@@ -115,6 +117,7 @@ augroup AutoFileType
   autocmd FileType scheme setl lispwords+=exist,all,<<=,<<+,<<-,<<~,<<+=,declare,dbk,define-dbk,section
   autocmd BufRead,BufNewFile SConstruct set filetype=python
   autocmd BufReadPost fugitive://* set bufhidden=delete
+  autocmd FileType tsv setlocal ts=8 sts=8 sw=8 noexpandtab
   autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
   autocmd FileType markdown setlocal ts=2 sts=2 sw=2 expandtab
 augroup END
